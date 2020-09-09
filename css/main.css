@@ -1,0 +1,632 @@
+.iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+div, nav {
+  box-sizing: border-box; }
+
+body {
+  width: 100%;
+  background-color: #282828;
+  margin: 0px;
+  font-family: "Merriweather", "serif";
+  font-size: 12px;
+  color: #e1e1e1; }
+
+.lightMode {
+  background-color: #f1f1f1;
+  color: #333; }
+  .lightMode .whiteText {
+    color: #333 !important; }
+  .lightMode .link {
+    color: #1b34a7 !important;
+    text-decoration: underline !important; }
+    .lightMode .link:hover {
+      color: #1b34a7 !important;
+      text-decoration: underline !important; }
+  .lightMode nav {
+    background-color: #c3c3c3; }
+    .lightMode nav .navContainer .navItem {
+      background-color: #fff; }
+      .lightMode nav .navContainer .navItem:hover .navItem_iconContainer_icon {
+        color: #f03947; }
+      .lightMode nav .navContainer .navItem:hover .navItem_text {
+        color: #f03947; }
+      .lightMode nav .navContainer .navItem_iconContainer_icon {
+        color: #333; }
+      .lightMode nav .navContainer .navItem_text {
+        color: #333;
+        font-weight: 600; }
+    .lightMode nav .navContainer .switchContainer .toggleSwitch_slider {
+      background-color: #fff; }
+      .lightMode nav .navContainer .switchContainer .toggleSwitch_slider_switch {
+        background-color: #f03947; }
+        .lightMode nav .navContainer .switchContainer .toggleSwitch_slider_switch_icon {
+          color: #fff; }
+  .lightMode .sectionContainer .section .sectionHeading_h2 {
+    color: #333; }
+  .lightMode .sectionContainer .section .sectionHeading_underline {
+    background-color: #f03947; }
+  .lightMode .sectionContainer .section .infoCard_textContainer {
+    background-color: #fff; }
+  .lightMode .sectionContainer .section .buttonContainer_button {
+    background-image: linear-gradient(to right, #fff 50%, #f03947 50%);
+    color: #f03947 !important;
+    border: 2px solid #f03947; }
+    .lightMode .sectionContainer .section .buttonContainer_button:hover .buttonContainer_button_text {
+      color: #fff !important; }
+    .lightMode .sectionContainer .section .buttonContainer_button_text {
+      color: #f03947 !important; }
+  .lightMode .sectionContainer .section .skillSection .skillItem {
+    background-color: #fff; }
+    .lightMode .sectionContainer .section .skillSection .skillItem_iconContainer {
+      background-color: #e0e0e0; }
+      .lightMode .sectionContainer .section .skillSection .skillItem_iconContainer_icon {
+        color: #333; }
+    .lightMode .sectionContainer .section .skillSection .skillItem_body_divider {
+      background-color: #eaeaea; }
+  .lightMode .workContainer .workItem {
+    background-color: #fff;
+    box-shadow: 0px 2px 8px #e3e3e3; }
+    .lightMode .workContainer .workItem:hover .workItem_hoverBox_text {
+      color: #fff; }
+    .lightMode .workContainer .workItem_content_p {
+      color: #333; }
+    .lightMode .workContainer .workItem_content_tags .tag {
+      border: none;
+      background-color: #fff;
+      border: 1px solid #f03947; }
+      .lightMode .workContainer .workItem_content_tags .tag_text {
+        font-weight: 600;
+        color: #f03947; }
+    .lightMode .workContainer .workItem_hoverBox {
+      background-image: linear-gradient(to right, #f9f9f9 50%, #f03947 50%); }
+      .lightMode .workContainer .workItem_hoverBox_text {
+        color: #f03947; }
+
+.overflowHidden {
+  overflow: hidden; }
+
+.boldText {
+  font-weight: 700 !important; }
+
+.italicText {
+  font-style: italic; }
+
+.whiteText {
+  color: #fff; }
+
+.displayNone {
+  display: none !important; }
+
+.link {
+  color: #fff !important;
+  text-decoration: underline !important; }
+  .link:hover {
+    color: #fff !important;
+    text-decoration: underline !important; }
+
+.h1, .h2, .h3, .h4, .h5 {
+  font-family: "Merriweather", "serif"; }
+
+nav {
+  width: 110px;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  background-color: #161616;
+  padding: 15px; }
+
+.navContainer {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .navContainer .navItem {
+    height: 80px;
+    width: 80px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #282828;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    text-align: center;
+    -webkit-transition: width 0.2s;
+    -moz-transition: width 0.2s;
+    -o-transition: width 0.2s;
+    transition: width 0.2s; }
+    .navContainer .navItem:hover {
+      cursor: pointer;
+      width: 85px; }
+      .navContainer .navItem:hover .navItem_iconContainer_icon {
+        color: #FAC748; }
+      .navContainer .navItem:hover .navItem_text {
+        color: #FAC748; }
+    .navContainer .navItem:last-of-type {
+      margin-bottom: 0px; }
+    .navContainer .navItem_iconContainer {
+      margin-bottom: 10px; }
+      .navContainer .navItem_iconContainer_icon {
+        font-size: 22px;
+        color: #fff;
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        -o-transition: color 0.2s;
+        transition: color 0.2s; }
+    .navContainer .navItem_text {
+      display: block;
+      font-size: 1.1em;
+      color: #fff;
+      -webkit-transition: color 0.2s;
+      -moz-transition: color 0.2s;
+      -o-transition: color 0.2s;
+      transition: color 0.2s; }
+  .navContainer .switchContainer {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-left: 10px; }
+    .navContainer .switchContainer_iconContainer {
+      margin-right: 5px;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center; }
+      .navContainer .switchContainer_iconContainer_icon {
+        font-size: 26px; }
+    .navContainer .switchContainer .toggleSwitch {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 36px; }
+      .navContainer .switchContainer .toggleSwitch_slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #3e3e3e;
+        border-radius: 34px;
+        line-height: 35px;
+        font-size: 1.1em;
+        color: #282828;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+        .navContainer .switchContainer .toggleSwitch_slider--checked {
+          background-color: #FAC748; }
+          .navContainer .switchContainer .toggleSwitch_slider--checked .toggleSwitch_slider_switch {
+            -webkit-transform: translateX(25px);
+            -ms-transform: translateX(25px);
+            transform: translateX(25px);
+            background-color: #282828; }
+            .navContainer .switchContainer .toggleSwitch_slider--checked .toggleSwitch_slider_switch_icon {
+              color: #FAC748; }
+            .navContainer .switchContainer .toggleSwitch_slider--checked .toggleSwitch_slider_switch #dark_icon {
+              display: block; }
+            .navContainer .switchContainer .toggleSwitch_slider--checked .toggleSwitch_slider_switch #light_icon {
+              display: none; }
+        .navContainer .switchContainer .toggleSwitch_slider_switch {
+          position: absolute;
+          height: 26px;
+          width: 26px;
+          left: 5px;
+          bottom: 5px;
+          border-radius: 50%;
+          background-color: #FAC748;
+          -webkit-transition: all 0.4s;
+          -moz-transition: all 0.4s;
+          -o-transition: all 0.4s;
+          transition: all 0.4s; }
+          .navContainer .switchContainer .toggleSwitch_slider_switch_icon {
+            font-size: 17px;
+            padding-top: 2px;
+            color: #282828; }
+          .navContainer .switchContainer .toggleSwitch_slider_switch #dark_icon {
+            display: none; }
+          .navContainer .switchContainer .toggleSwitch_slider_switch #light_icon {
+            display: block; }
+      .navContainer .switchContainer .toggleSwitch input {
+        opacity: 0;
+        width: 0;
+        height: 0; }
+
+.pageContent {
+  padding-left: 110px; }
+
+.sectionContainer .section {
+  width: 85%;
+  max-width: 900px;
+  margin: 60px auto;
+  margin-bottom: 100px; }
+
+.sectionHeading {
+  font-family: "Lora", "serif";
+  margin: 30px 0px; }
+  .sectionHeading_h2 {
+    margin: 0px;
+    font-size: 4.5em;
+    color: #fff; }
+  .sectionHeading_underline {
+    width: 75px;
+    height: 2px;
+    margin-top: 15px;
+    background-color: #FAC748; }
+
+.sectionText {
+  margin: 0px;
+  margin-bottom: 15px;
+  font-size: 1.5em;
+  font-weight: 300;
+  line-height: 1.8em; }
+
+.sectionSubheading {
+  font-family: "Lora", "serif";
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 2.2em; }
+
+.infoCard {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 30px; }
+  .infoCard_imageContainer {
+    margin: auto;
+    margin-right: 30px; }
+    .infoCard_imageContainer_image {
+      width: 100%;
+      max-width: 180px;
+      display: block;
+      margin: auto;
+      border-radius: 100%; }
+  .infoCard_textContainer {
+    padding: 12px 15px;
+    background-color: #3e3e3e;
+    border-radius: 5px;
+    margin: auto; }
+    .infoCard_textContainer_h4 {
+      margin: 0px;
+      margin-bottom: 12px;
+      font-size: 1.5em;
+      line-height: 1.5em;
+      font-weight: 400; }
+      .infoCard_textContainer_h4:last-of-type {
+        margin-bottom: 0px; }
+      .infoCard_textContainer_h4_icon {
+        width: 20px;
+        margin-right: 10px;
+        text-align: center; }
+      .infoCard_textContainer_h4 .fa-user {
+        font-size: 1.1em; }
+      .infoCard_textContainer_h4 .fa-dekstop {
+        font-size: 0.9em; }
+
+.buttonContainer--inlineFlex {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex; }
+  .buttonContainer--inlineFlex .buttonContainer_button {
+    margin-right: 20px; }
+    .buttonContainer--inlineFlex .buttonContainer_button:last-of-type {
+      margin-right: 0px; }
+.buttonContainer--grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px; }
+.buttonContainer_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 6px;
+  text-decoration: none !important;
+  color: #FAC748 !important;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, #3e3e3e 50%, #FAC748 50%);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .buttonContainer_button--disabled {
+    background-color: #d1d1d1; }
+    .buttonContainer_button--disabled:hover {
+      background-color: #d1d1d1 !important;
+      cursor: default !important; }
+    .buttonContainer_button--disabled .buttonContainer_button_text {
+      color: #656565 !important; }
+    .buttonContainer_button--disabled .buttonContainer_button_icon {
+      color: #656565 !important; }
+  .buttonContainer_button_icon {
+    display: block;
+    margin: auto;
+    color: #fff;
+    font-size: 21px !important;
+    height: 19px;
+    text-align: center; }
+  .buttonContainer_button--spin:hover {
+    background-color: #FF4A1C !important;
+    cursor: default !important; }
+  .buttonContainer_button_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    color: #FAC748 !important;
+    text-decoration: none !important;
+    font-size: 1.3em;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s; }
+    .buttonContainer_button_text_icon {
+      font-size: 1.2em;
+      margin-left: 9px;
+      margin-top: 2px; }
+  .buttonContainer_button:hover {
+    cursor: pointer;
+    background-position: -100% 0; }
+  .buttonContainer_button:hover .buttonContainer_button_text {
+    color: #282828 !important;
+    text-decoration: none !important; }
+
+.skillSection {
+  margin: 50px auto; }
+  .skillSection:last-of-type {
+    margin-bottom: 0px; }
+  .skillSection .sectionText {
+    margin-bottom: 20px; }
+  .skillSection .skillItemGrid {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+    .skillSection .skillItemGrid .skillItem {
+      width: 100%;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      border-radius: 5px;
+      background-color: #585858;
+      border-left: 8px solid #fff; }
+      .skillSection .skillItemGrid .skillItem--green {
+        border-color: #60992D !important; }
+        .skillSection .skillItemGrid .skillItem--green .skillLevel_icon {
+          background-color: #60992D !important; }
+      .skillSection .skillItemGrid .skillItem--orange {
+        border-color: #DE6B48 !important; }
+        .skillSection .skillItemGrid .skillItem--orange .skillLevel_icon {
+          background-color: #DE6B48 !important; }
+      .skillSection .skillItemGrid .skillItem_iconContainer {
+        width: 70px;
+        background-color: #3e3e3e; }
+        .skillSection .skillItemGrid .skillItem_iconContainer_icon {
+          font-size: 30px;
+          color: #fff; }
+      .skillSection .skillItemGrid .skillItem_body {
+        width: inherit;
+        padding: 10px 12px; }
+        .skillSection .skillItemGrid .skillItem_body_heading {
+          margin: 0px;
+          font-size: 1.7em;
+          line-height: 1.5em; }
+        .skillSection .skillItemGrid .skillItem_body_divider {
+          height: 1px;
+          width: 100%;
+          margin: 10px 0px;
+          background-color: #676767; }
+        .skillSection .skillItemGrid .skillItem_body .skillLevel {
+          display: -webkit-inline-box;
+          display: -ms-inline-flexbox;
+          display: inline-flex;
+          align-items: center; }
+          .skillSection .skillItemGrid .skillItem_body .skillLevel_icon {
+            height: 15px;
+            width: 15px;
+            display: inline-block;
+            border-radius: 100%;
+            margin-right: 8px;
+            background-color: #fff; }
+          .skillSection .skillItemGrid .skillItem_body .skillLevel_text {
+            font-size: 1.3em;
+            line-height: 1.5em; }
+
+.workContainer {
+  max-width: 1200px; }
+  .workContainer_menu .menuItem {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #404040;
+    border-radius: 5px;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s; }
+    .workContainer_menu .menuItem:last-of-type {
+      margin-bottom: 0px; }
+    .workContainer_menu .menuItem:hover {
+      cursor: pointer;
+      padding-left: 18px;
+      color: #FAC748; }
+    .workContainer_menu .menuItem--active {
+      border-left: 8px solid #FAC748; }
+      .workContainer_menu .menuItem--active:hover {
+        cursor: default;
+        padding-left: 12px; }
+      .workContainer_menu .menuItem--active .menuItem_text {
+        color: #FAC748;
+        font-weight: 600; }
+    .workContainer_menu .menuItem_text {
+      font-size: 1.4em;
+      line-height: 1.5em; }
+  .workContainer .workItem {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+    background-color: #404040;
+    border-radius: 5px;
+    text-decoration: none !important; }
+    .workContainer .workItem:last-of-type {
+      margin-bottom: 0px; }
+    .workContainer .workItem:hover {
+      cursor: pointer; }
+      .workContainer .workItem:hover .workItem_imageContainer_image {
+        transform: scale(1.03); }
+      .workContainer .workItem:hover .workItem_hoverBox {
+        background-position: -100% 0; }
+        .workContainer .workItem:hover .workItem_hoverBox_text {
+          color: #282828; }
+    .workContainer .workItem--active .workItem_imageContainer_image {
+      transform: scale(1.03); }
+    .workContainer .workItem_imageContainer {
+      display: none;
+      overflow: hidden !important;
+      border-radius: 5px 5px 0px 0px; }
+      .workContainer .workItem_imageContainer_image {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin: auto;
+        border-radius: 5px 0px 0px 0px;
+        -webkit-transition: transform 0.4s;
+        -moz-transition: transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s; }
+    .workContainer .workItem_content {
+      width: 100%;
+      margin: auto;
+      padding: 15px 20px; }
+      .workContainer .workItem_content_h3 {
+        display: block;
+        margin: 0px;
+        margin-bottom: 12px;
+        font-size: 2em;
+        line-height: 1.5em;
+        text-decoration: underline; }
+      .workContainer .workItem_content_p {
+        margin: 0px;
+        margin-bottom: 15px;
+        color: #e9e9e9;
+        font-size: 1.4em;
+        line-height: 1.5em; }
+      .workContainer .workItem_content_tags {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-top: 10px; }
+        .workContainer .workItem_content_tags .tag {
+          width: fit-content;
+          margin-right: 12px;
+          margin-bottom: 15px;
+          padding: 6px 10px;
+          border: 1px solid #FAC748;
+          border-radius: 5px;
+          text-align: center; }
+          .workContainer .workItem_content_tags .tag:last-of-type {
+            margin-right: 0px; }
+          .workContainer .workItem_content_tags .tag_text {
+            font-size: 1.2em;
+            color: #FAC748; }
+    .workContainer .workItem_hoverBox {
+      display: block;
+      padding: 15px 20px;
+      grid-column: 1 / span 2;
+      text-align: right;
+      text-decoration: none !important;
+      border-radius: 0px 0px 5px 5px;
+      z-index: 999;
+      background-size: 200% 100%;
+      background-image: linear-gradient(to right, #161616 50%, #FAC748 50%);
+      -webkit-transition: background-position 0.3s;
+      -moz-transition: background-position 0.3s;
+      -o-transition: background-position 0.3s;
+      transition: background-position 0.3s; }
+      .workContainer .workItem_hoverBox_text {
+        color: #FAC748;
+        font-size: 1.4em;
+        -webkit-transition: color 0.3s;
+        -moz-transition: color 0.3s;
+        -o-transition: color 0.3s;
+        transition: color 0.3s; }
+        .workContainer .workItem_hoverBox_text_icon {
+          margin-left: 5px; }
+
+@media only screen and (max-width: 900px) {
+  .workContainer .workItem {
+    display: block; }
+    .workContainer .workItem_imageContainer_image {
+      border-radius: 5px 5px 0px 0px; } }
+@media only screen and (max-width: 850px) {
+  .skillSection .skillItemGrid {
+    grid-template-columns: 1fr; } }
+@media only screen and (max-width: 700px) {
+  .pageContent {
+    padding: 0px;
+    padding-top: 110px; }
+
+  .sectionContainer .section {
+    width: 90%;
+    margin: 30px auto; }
+
+  nav {
+    width: 100%;
+    height: 110px; }
+    nav .navContainer .navItem {
+      margin: 0px;
+      margin-right: 20px; }
+
+  .infoCard {
+    width: 100%;
+    display: block; }
+    .infoCard_imageContainer {
+      margin-right: 0px;
+      margin-bottom: 30px; }
+      .infoCard_imageContainer_image {
+        max-width: 280px;
+        margin: 0px; }
+    .infoCard_textContainer {
+      width: fit-content;
+      margin: 0px;
+      margin-top: 10px; } }
+@media only screen and (max-width: 600px) {
+  .sectionContainer .section {
+    margin: 30px auto; }
+
+  .sectionHeading_h2 {
+    font-size: 3em; }
+
+  .buttonContainer--inlineFlex {
+    display: block; }
+    .buttonContainer--inlineFlex .buttonContainer_button {
+      margin-right: 0px;
+      margin-bottom: 20px; }
+      .buttonContainer--inlineFlex .buttonContainer_button:last-of-type {
+        margin-bottom: 0px; }
+  .buttonContainer .buttonContainer_button {
+    width: 100%; } }
+@media only screen and (max-width: 500px) {
+  .infoCard_imageContainer {
+    margin: auto;
+    margin-bottom: 30px; }
+    .infoCard_imageContainer_image {
+      max-width: 280px;
+      margin: auto; } }
