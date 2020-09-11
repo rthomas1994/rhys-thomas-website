@@ -3,7 +3,7 @@ var scrollOffset = 50;
 $(document).ready(function() {
 
     if ($(window).width() < 700) {
-        scrollOffset = 140;
+        scrollOffset = 120;
     }
 
     // Check on page load
