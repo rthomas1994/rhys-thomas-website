@@ -17,7 +17,7 @@ body {
   color: #e1e1e1; }
 
 .lightMode {
-  background-color: #f1f1f1;
+  background-color: #f4f4f4;
   color: #333; }
   .lightMode .whiteText {
     color: #333 !important; }
@@ -32,9 +32,9 @@ body {
     .lightMode nav .navContainer .navItem {
       background-color: #fff; }
       .lightMode nav .navContainer .navItem:hover .navItem_iconContainer_icon {
-        color: #f03947; }
+        color: #4E4187; }
       .lightMode nav .navContainer .navItem:hover .navItem_text {
-        color: #f03947; }
+        color: #4E4187; }
       .lightMode nav .navContainer .navItem_iconContainer_icon {
         color: #333; }
       .lightMode nav .navContainer .navItem_text {
@@ -43,25 +43,33 @@ body {
     .lightMode nav .navContainer .switchContainer .toggleSwitch_slider {
       background-color: #fff; }
       .lightMode nav .navContainer .switchContainer .toggleSwitch_slider_switch {
-        background-color: #f03947; }
+        background-color: #4E4187; }
         .lightMode nav .navContainer .switchContainer .toggleSwitch_slider_switch_icon {
           color: #fff; }
   .lightMode .sectionContainer .section .sectionHeading_h2 {
     color: #333; }
   .lightMode .sectionContainer .section .sectionHeading_underline {
-    background-color: #f03947; }
+    background-color: #4E4187; }
+  .lightMode .sectionContainer .section .infoCard_imageContainer .lightImage {
+    display: block; }
+  .lightMode .sectionContainer .section .infoCard_imageContainer .darkImage {
+    display: none; }
   .lightMode .sectionContainer .section .infoCard_textContainer {
     background-color: #fff; }
   .lightMode .sectionContainer .section .buttonContainer_button {
-    background-image: linear-gradient(to right, #fff 50%, #f03947 50%);
-    color: #f03947 !important;
-    border: 2px solid #f03947; }
+    background-image: linear-gradient(to right, #fff 50%, #4E4187 50%);
+    color: #4E4187 !important;
+    border: 2px solid #4E4187; }
     .lightMode .sectionContainer .section .buttonContainer_button:hover .buttonContainer_button_text {
       color: #fff !important; }
     .lightMode .sectionContainer .section .buttonContainer_button_text {
-      color: #f03947 !important; }
+      color: #4E4187 !important; }
   .lightMode .sectionContainer .section .skillSection .skillItem {
     background-color: #fff; }
+    .lightMode .sectionContainer .section .skillSection .skillItem--white {
+      border-color: #b1b1b1 !important; }
+      .lightMode .sectionContainer .section .skillSection .skillItem--white .skillItem_body .skillLevel_icon {
+        background-color: #b1b1b1 !important; }
     .lightMode .sectionContainer .section .skillSection .skillItem_iconContainer {
       background-color: #e0e0e0; }
       .lightMode .sectionContainer .section .skillSection .skillItem_iconContainer_icon {
@@ -77,15 +85,16 @@ body {
       color: #333; }
     .lightMode .workContainer .workItem_content_tags .tag {
       border: none;
-      background-color: #fff;
-      border: 1px solid #f03947; }
+      background-color: #f6f4ff;
+      border: 1px solid #4E4187; }
       .lightMode .workContainer .workItem_content_tags .tag_text {
         font-weight: 600;
-        color: #f03947; }
+        color: #4E4187; }
     .lightMode .workContainer .workItem_hoverBox {
-      background-image: linear-gradient(to right, #f9f9f9 50%, #f03947 50%); }
+      background-image: linear-gradient(to right, #fff 50%, #4E4187 50%);
+      border-top: 1px solid #eaeaea; }
       .lightMode .workContainer .workItem_hoverBox_text {
-        color: #f03947; }
+        color: #4E4187; }
 
 .overflowHidden {
   overflow: hidden; }
@@ -293,6 +302,8 @@ nav {
       display: block;
       margin: auto;
       border-radius: 100%; }
+    .infoCard_imageContainer .lightImage {
+      display: none; }
   .infoCard_textContainer {
     padding: 12px 15px;
     background-color: #3e3e3e;
@@ -412,9 +423,13 @@ nav {
         .skillSection .skillItemGrid .skillItem--green .skillLevel_icon {
           background-color: #60992D !important; }
       .skillSection .skillItemGrid .skillItem--orange {
-        border-color: #DE6B48 !important; }
+        border-color: #EF8A17 !important; }
         .skillSection .skillItemGrid .skillItem--orange .skillLevel_icon {
-          background-color: #DE6B48 !important; }
+          background-color: #EF8A17 !important; }
+      .skillSection .skillItemGrid .skillItem--white {
+        border-color: #fff !important; }
+        .skillSection .skillItemGrid .skillItem--white .skillLevel_icon {
+          background-color: #fff !important; }
       .skillSection .skillItemGrid .skillItem_iconContainer {
         width: 70px;
         background-color: #3e3e3e; }
@@ -490,10 +505,14 @@ nav {
       cursor: pointer; }
       .workContainer .workItem:hover .workItem_imageContainer_image {
         transform: scale(1.03); }
+      .workContainer .workItem:hover .workItem_content_h3 {
+        padding-left: 5px; }
       .workContainer .workItem:hover .workItem_hoverBox {
         background-position: -100% 0; }
         .workContainer .workItem:hover .workItem_hoverBox_text {
           color: #282828; }
+    .workContainer .workItem--noClick {
+      pointer-events: none !important; }
     .workContainer .workItem--active .workItem_imageContainer_image {
       transform: scale(1.03); }
     .workContainer .workItem_imageContainer {
@@ -520,7 +539,11 @@ nav {
         margin-bottom: 12px;
         font-size: 2em;
         line-height: 1.5em;
-        text-decoration: underline; }
+        text-decoration: underline;
+        -webkit-transition: padding-left 0.3s;
+        -moz-transition: padding-left 0.3s;
+        -o-transition: padding-left 0.3s;
+        transition: padding-left 0.3s; }
       .workContainer .workItem_content_p {
         margin: 0px;
         margin-bottom: 15px;
@@ -535,11 +558,11 @@ nav {
         margin-top: 10px; }
         .workContainer .workItem_content_tags .tag {
           width: fit-content;
-          margin-right: 12px;
+          margin-right: 10px;
           margin-bottom: 15px;
-          padding: 6px 10px;
-          border: 1px solid #FAC748;
-          border-radius: 5px;
+          padding: 8px 12px;
+          background-color: #3A3939;
+          border-radius: 18px;
           text-align: center; }
           .workContainer .workItem_content_tags .tag:last-of-type {
             margin-right: 0px; }
@@ -553,6 +576,7 @@ nav {
       text-align: right;
       text-decoration: none !important;
       border-radius: 0px 0px 5px 5px;
+      border-top: 1px solid #4e4e4e;
       z-index: 999;
       background-size: 200% 100%;
       background-image: linear-gradient(to right, #161616 50%, #FAC748 50%);
@@ -593,6 +617,8 @@ nav {
     nav .navContainer .navItem {
       margin: 0px;
       margin-right: 20px; }
+    nav .navContainer .switchContainer {
+      margin-left: 0px; }
 
   .infoCard {
     width: 100%;
@@ -609,7 +635,8 @@ nav {
       margin-top: 10px; } }
 @media only screen and (max-width: 600px) {
   .sectionContainer .section {
-    margin: 30px auto; }
+    margin: 30px auto;
+    margin-bottom: 100px; }
 
   .sectionHeading_h2 {
     font-size: 3em; }
@@ -630,3 +657,14 @@ nav {
     .infoCard_imageContainer_image {
       max-width: 280px;
       margin: auto; } }
+@media only screen and (max-width: 400px) {
+  nav {
+    height: 100px; }
+    nav .navContainer .navItem {
+      height: 70px;
+      width: 70px;
+      margin-right: 15px; }
+      nav .navContainer .navItem_iconContainer_icon {
+        font-size: 20px; }
+      nav .navContainer .navItem_text {
+        font-size: 1em; } }
