@@ -1139,6 +1139,20 @@ nav {
 			.navItem {
 				margin: 0px;
 				margin-right: 20px;
+
+				&:hover {
+					width: 80px;
+
+					.navItem_iconContainer_icon {
+						color: inherit;
+					}
+
+					.navItem_text {
+						color: inherit;
+					}
+
+				}
+
 			}
 
 			.switchContainer {
@@ -1249,6 +1263,10 @@ nav {
 				height: 70px;
 				width: 70px;
 				margin-right: 15px;
+
+				&:hover {
+					width: 70px;
+				}
 
 				&_iconContainer_icon {
 					font-size: 20px;

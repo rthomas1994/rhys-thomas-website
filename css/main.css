@@ -617,6 +617,12 @@ nav {
     nav .navContainer .navItem {
       margin: 0px;
       margin-right: 20px; }
+      nav .navContainer .navItem:hover {
+        width: 80px; }
+        nav .navContainer .navItem:hover .navItem_iconContainer_icon {
+          color: inherit; }
+        nav .navContainer .navItem:hover .navItem_text {
+          color: inherit; }
     nav .navContainer .switchContainer {
       margin-left: 0px; }
 
@@ -664,6 +670,8 @@ nav {
       height: 70px;
       width: 70px;
       margin-right: 15px; }
+      nav .navContainer .navItem:hover {
+        width: 70px; }
       nav .navContainer .navItem_iconContainer_icon {
         font-size: 20px; }
       nav .navContainer .navItem_text {
