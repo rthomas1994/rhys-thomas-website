@@ -28,7 +28,7 @@ body {
       color: #1b34a7 !important;
       text-decoration: underline !important; }
   .lightMode nav {
-    background-color: #c3c3c3; }
+    background-color: #e2e2e2; }
     .lightMode nav .navContainer .navItem {
       background-color: #fff; }
       .lightMode nav .navContainer .navItem:hover .navItem_iconContainer_icon {
