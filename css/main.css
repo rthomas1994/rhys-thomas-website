@@ -309,21 +309,21 @@ nav {
     background-color: #3e3e3e;
     border-radius: 5px;
     margin: auto; }
-    .infoCard_textContainer_h4 {
+    .infoCard_textContainer_text {
       margin: 0px;
       margin-bottom: 12px;
       font-size: 1.5em;
       line-height: 1.5em;
       font-weight: 400; }
-      .infoCard_textContainer_h4:last-of-type {
+      .infoCard_textContainer_text:last-of-type {
         margin-bottom: 0px; }
-      .infoCard_textContainer_h4_icon {
+      .infoCard_textContainer_text_icon {
         width: 20px;
         margin-right: 10px;
         text-align: center; }
-      .infoCard_textContainer_h4 .fa-user {
+      .infoCard_textContainer_text .fa-user {
         font-size: 1.1em; }
-      .infoCard_textContainer_h4 .fa-dekstop {
+      .infoCard_textContainer_text .fa-dekstop {
         font-size: 0.9em; }
 
 .buttonContainer--inlineFlex {
