@@ -160,7 +160,7 @@ body {
 
 			.sectionHeading {
 
-				&_h2 {
+				&_1 {
 					color: #333;
 				}
 
@@ -547,7 +547,7 @@ nav {
 	@include font-lora;
 	margin: 30px 0px;
 
-	&_h2 {
+	&_h1 {
 		margin: 0px;
 		font-size: 4.5em;
 		color: #fff;
@@ -1202,7 +1202,7 @@ nav {
 
 	}
 
-	.sectionHeading_h2 {
+	.sectionHeading_h1 {
 		font-size: 3em;
 	}
 
