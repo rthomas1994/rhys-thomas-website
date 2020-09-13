@@ -111,6 +111,9 @@ body {
 .displayNone {
   display: none !important; }
 
+.noUnderline {
+  text-decoration: none !important; }
+
 .link {
   color: #fff !important;
   text-decoration: underline !important; }
@@ -401,7 +404,8 @@ nav {
     text-decoration: none !important; }
 
 .skillSection {
-  margin: 50px auto; }
+  margin: 50px auto;
+  margin-bottom: 70px; }
   .skillSection:last-of-type {
     margin-bottom: 0px; }
   .skillSection .sectionText {
