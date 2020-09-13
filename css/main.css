@@ -263,7 +263,7 @@ nav {
   width: 85%;
   max-width: 900px;
   margin: 60px auto;
-  margin-bottom: 100px; }
+  margin-bottom: 120px; }
 
 .sectionHeading {
   font-family: "Lora", "serif";
@@ -405,7 +405,7 @@ nav {
 
 .skillSection {
   margin: 50px auto;
-  margin-bottom: 70px; }
+  margin-bottom: 100px; }
   .skillSection:last-of-type {
     margin-bottom: 0px; }
   .skillSection .sectionText {
