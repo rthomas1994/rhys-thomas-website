@@ -538,7 +538,8 @@ nav {
     .workContainer .workItem_content {
       width: 100%;
       margin: auto;
-      padding: 15px 20px; }
+      padding: 15px 20px;
+      padding-bottom: 10px; }
       .workContainer .workItem_content_h2 {
         display: block;
         margin: 0px;
