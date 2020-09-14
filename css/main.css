@@ -153,6 +153,7 @@ nav {
     margin-bottom: 20px;
     padding-top: 5px;
     text-align: center;
+    text-decoration: none !important;
     -webkit-transition: width 0.2s;
     -moz-transition: width 0.2s;
     -o-transition: width 0.2s;
@@ -164,8 +165,6 @@ nav {
         color: #FAC748; }
       .navContainer .navItem:hover .navItem_text {
         color: #FAC748; }
-    .navContainer .navItem:last-of-type {
-      margin-bottom: 0px; }
     .navContainer .navItem_iconContainer {
       margin-bottom: 10px; }
       .navContainer .navItem_iconContainer_icon {

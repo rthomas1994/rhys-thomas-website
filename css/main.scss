@@ -385,6 +385,7 @@ nav {
 		margin-bottom: 20px;
 		padding-top: 5px;
 		text-align: center;
+		text-decoration: none !important;
 		@include transition(width, 0.2s);
 
 		&:hover {
@@ -401,9 +402,9 @@ nav {
 
 		}
 
-		&:last-of-type {
-			margin-bottom: 0px;
-		}
+		// &:last-of-type {
+		// 	margin-bottom: 0px;
+		// }
 
 		&_iconContainer {
 			margin-bottom: 10px;
