@@ -355,6 +355,20 @@ body {
 ///////////Layout/////////////
 //////////////////////////////
 
+.skipNav {
+    position: absolute;
+    left: -120px;
+    top: 20px;
+	font-size: 1.2em;
+    line-height: 1.5em;
+    color: #fff;
+
+    &:focus {
+    	left: 140px;
+    }
+
+}
+
 nav {
 	width: 110px;
 	height: 100vh;
@@ -398,6 +412,16 @@ nav {
 
 			.navItem_text {
 				color: #FAC748;
+			}
+
+		}
+
+		&--skip {
+			height: 50px;
+			padding-top: 0px;
+
+			.navItem_text {
+				font-size: 1em;
 			}
 
 		}
