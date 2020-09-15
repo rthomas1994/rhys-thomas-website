@@ -98,9 +98,13 @@ body {
   .lightMode .footer {
     background-color: #fff; }
     .lightMode .footer_icons .iconContainer {
-      background-color: #4E4187; }
+      background-color: #3a3a3a; }
       .lightMode .footer_icons .iconContainer:hover {
-        background-color: #382b6d; }
+        background-color: #d2d2d2; }
+      .lightMode .footer_icons .iconContainer_icon {
+        color: #333; }
+    .lightMode .footer_text {
+      color: #333; }
 
 .overflowHidden {
   overflow: hidden; }
