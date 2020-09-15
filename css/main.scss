@@ -308,6 +308,24 @@ body {
 
 	}
 
+	.footer {
+		background-color: #fff;
+
+		&_icons {
+
+			.iconContainer {
+				background-color: #4E4187;
+
+				&:hover {
+					background-color: #382b6d;				
+				}
+
+			}
+
+		}
+
+	}
+
 }
 
 .overflowHidden {

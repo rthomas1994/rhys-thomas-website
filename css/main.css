@@ -95,6 +95,12 @@ body {
       border-top: 1px solid #eaeaea; }
       .lightMode .workContainer .workItem_hoverBox_text {
         color: #4E4187; }
+  .lightMode .footer {
+    background-color: #fff; }
+    .lightMode .footer_icons .iconContainer {
+      background-color: #4E4187; }
+      .lightMode .footer_icons .iconContainer:hover {
+        background-color: #382b6d; }
 
 .overflowHidden {
   overflow: hidden; }
