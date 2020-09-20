@@ -180,7 +180,8 @@ nav {
     transition: width 0.2s; }
     .navContainer .navItem:hover {
       cursor: pointer;
-      width: 85px; }
+      width: 85px;
+      color: inherit !important; }
       .navContainer .navItem:hover .navItem_iconContainer_icon {
         color: #FAC748; }
       .navContainer .navItem:hover .navItem_text {
