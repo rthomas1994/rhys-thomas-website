@@ -2,8 +2,6 @@
 ///////////Mixins/////////////
 //////////////////////////////
 
-// @import "/var/www/html/css/global_mixins.scss";
-
 @mixin flex {
 	display: -webkit-box;
     display: -ms-flexbox;
@@ -582,11 +580,6 @@ nav {
 
 .pageContent {
 	padding-left: 110px;
-}
-
-.fullHeightSection {
-	// height: 100vh;
-	// padding: 20px;
 }
 
 .sectionContainer {
