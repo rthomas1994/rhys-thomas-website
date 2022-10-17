@@ -713,7 +713,6 @@ nav {
         max-width: 280px;
         margin: 0px; }
     .infoCard_textContainer {
-      width: fit-content;
       margin: 0px;
       margin-top: 10px; } }
 @media only screen and (max-width: 600px) {
