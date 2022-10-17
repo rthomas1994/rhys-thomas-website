@@ -562,6 +562,8 @@ nav {
         display: block;
         margin: auto;
         border-radius: 5px 0px 0px 0px; }
+      .workContainer .workItem_imageContainer #client-logos-mobile {
+        display: none; }
     .workContainer .workItem_content {
       width: 100%;
       margin: auto;
@@ -737,7 +739,12 @@ nav {
     margin: auto;
     margin-bottom: 30px; }
     .infoCard_imageContainer_image {
-      max-width: 160px; } }
+      max-width: 160px; }
+
+  .workContainer .workItem_imageContainer #client-logos-mobile {
+    display: block; }
+  .workContainer .workItem_imageContainer #client-logos-desktop {
+    display: none; } }
 @media only screen and (max-width: 400px) {
   nav {
     height: 100px; }

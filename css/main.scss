@@ -1033,6 +1033,10 @@ nav {
 				// @include transition(transform, 0.4s);
 			}
 
+			#client-logos-mobile {
+				display: none;
+			}
+
 		}
 
 		&_content {
@@ -1375,6 +1379,26 @@ nav {
 			&_image {
 				max-width: 160px;
 				// margin: auto;
+			}
+
+		}
+
+	}
+
+	.workContainer {
+
+		.workItem {
+
+			&_imageContainer {
+
+				#client-logos-mobile {
+					display: block;
+				}
+
+				#client-logos-desktop {
+					display: none;
+				}
+
 			}
 
 		}
