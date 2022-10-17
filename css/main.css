@@ -12,7 +12,7 @@ body {
   width: 100%;
   background-color: #282828;
   margin: 0px;
-  font-family: "Merriweather", "serif";
+  font-family: "Fira Sans", "sans-serif";
   font-size: 12px;
   color: #e1e1e1; }
 
@@ -43,7 +43,7 @@ body {
     .lightMode nav .navContainer .switchContainer .toggleSwitch_slider {
       background-color: #fff; }
       .lightMode nav .navContainer .switchContainer .toggleSwitch_slider_switch {
-        background-color: #4E4187; }
+        background-color: #4258CB; }
         .lightMode nav .navContainer .switchContainer .toggleSwitch_slider_switch_icon {
           color: #fff; }
   .lightMode .sectionContainer .section .sectionHeading_h1 {
@@ -125,17 +125,17 @@ body {
   text-decoration: none !important; }
 
 .link {
-  color: #fff !important;
+  color: #f2c95a !important;
   text-decoration: underline !important; }
   .link:hover {
     color: #fff !important;
     text-decoration: underline !important; }
 
 .h1, .h2, .h3, .h4, .h5 {
-  font-family: "Merriweather", "serif"; }
+  font-family: "Source Sans Pro", "sans-serif"; }
 
 .paddingLeft5 {
-  padding-left: 5px; }
+  padding-left: 3px; }
 
 .skipNav {
   position: absolute;
@@ -186,9 +186,9 @@ nav {
       width: 85px;
       color: inherit !important; }
       .navContainer .navItem:hover .navItem_iconContainer_icon {
-        color: #FAC748; }
+        color: #f2c95a; }
       .navContainer .navItem:hover .navItem_text {
-        color: #FAC748; }
+        color: #f2c95a; }
     .navContainer .navItem--skip {
       height: 50px;
       padding-top: 0px; }
@@ -205,7 +205,7 @@ nav {
         transition: color 0.2s; }
     .navContainer .navItem_text {
       display: block;
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: #fff;
       -webkit-transition: color 0.2s;
       -moz-transition: color 0.2s;
@@ -247,14 +247,14 @@ nav {
         -o-transition: all 0.3s;
         transition: all 0.3s; }
         .navContainer .switchContainer .toggleSwitch_slider--checked {
-          background-color: #FAC748; }
+          background-color: #f2c95a; }
           .navContainer .switchContainer .toggleSwitch_slider--checked .toggleSwitch_slider_switch {
             -webkit-transform: translateX(25px);
             -ms-transform: translateX(25px);
             transform: translateX(25px);
             background-color: #282828; }
             .navContainer .switchContainer .toggleSwitch_slider--checked .toggleSwitch_slider_switch_icon {
-              color: #FAC748; }
+              color: #f2c95a; }
             .navContainer .switchContainer .toggleSwitch_slider--checked .toggleSwitch_slider_switch #dark_icon {
               display: block; }
             .navContainer .switchContainer .toggleSwitch_slider--checked .toggleSwitch_slider_switch #light_icon {
@@ -266,7 +266,7 @@ nav {
           left: 5px;
           bottom: 5px;
           border-radius: 50%;
-          background-color: #FAC748;
+          background-color: #f2c95a;
           -webkit-transition: all 0.4s;
           -moz-transition: all 0.4s;
           -o-transition: all 0.4s;
@@ -294,7 +294,7 @@ nav {
   margin-bottom: 120px; }
 
 .sectionHeading {
-  font-family: "Lora", "serif";
+  font-family: "Source Sans Pro", "sans-serif";
   margin: 30px 0px;
   margin-bottom: 50px; }
   .sectionHeading_h1 {
@@ -305,20 +305,21 @@ nav {
     width: 75px;
     height: 2px;
     margin-top: 15px;
-    background-color: #FAC748; }
+    background-color: #f2c95a; }
 
 .sectionText {
   margin: 0px;
-  margin-bottom: 15px;
-  font-size: 1.6em;
-  font-weight: 300;
-  line-height: 1.9em; }
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.4em; }
 
 .sectionSubheading {
-  font-family: "Lora", "serif";
+  font-family: "Source Sans Pro", "sans-serif";
   margin: 0px;
   margin-bottom: 10px;
-  font-size: 2.4em; }
+  font-size: 2.4em;
+  font-weight: 600; }
 
 .infoCard {
   display: -webkit-inline-box;
@@ -337,17 +338,17 @@ nav {
     .infoCard_imageContainer .lightImage {
       display: none; }
   .infoCard_textContainer {
-    padding: 12px 15px;
+    padding: 15px 20px;
     background-color: #3e3e3e;
     border-radius: 5px;
     margin: auto; }
     .infoCard_textContainer_text {
       display: block;
       margin: 0px;
-      margin-bottom: 12px;
-      font-size: 1.5em;
+      margin-bottom: 10px;
+      font-size: 1.4em;
       line-height: 1.5em;
-      font-weight: 400; }
+      font-weight: 300; }
       .infoCard_textContainer_text:last-of-type {
         margin-bottom: 0px; }
       .infoCard_textContainer_text_icon {
@@ -383,9 +384,9 @@ nav {
   height: 50px;
   border-radius: 6px;
   text-decoration: none !important;
-  color: #FAC748 !important;
+  color: #f2c95a !important;
   background-size: 200% 100%;
-  background-image: linear-gradient(to right, #3e3e3e 50%, #FAC748 50%);
+  background-image: linear-gradient(to right, #3e3e3e 50%, #f2c95a 50%);
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -414,17 +415,17 @@ nav {
     display: -ms-flexbox;
     display: flex;
     align-items: center;
-    color: #FAC748 !important;
+    color: #f2c95a !important;
     text-decoration: none !important;
-    font-size: 1.3em;
+    font-size: 1.4em;
     -webkit-transition: color 0.2s;
     -moz-transition: color 0.2s;
     -o-transition: color 0.2s;
     transition: color 0.2s; }
     .buttonContainer_button_text_icon {
-      font-size: 1.2em;
+      font-size: 1em;
       margin-left: 9px;
-      margin-top: 2px; }
+      margin-top: 5px; }
   .buttonContainer_button:hover {
     cursor: pointer;
     background-position: -100% 0; }
@@ -450,7 +451,7 @@ nav {
       display: -ms-inline-flexbox;
       display: inline-flex;
       border-radius: 5px;
-      background-color: #585858;
+      background-color: #484848;
       border-left: 8px solid #fff; }
       .skillSection .skillItemGrid .skillItem--green {
         border-color: #60992D !important; }
@@ -476,11 +477,12 @@ nav {
         .skillSection .skillItemGrid .skillItem_body_heading {
           margin: 0px;
           font-size: 1.6em;
-          line-height: 1.5em; }
+          line-height: 1.5em;
+          font-weight: 500; }
         .skillSection .skillItemGrid .skillItem_body_divider {
           height: 1px;
           width: 100%;
-          margin: 10px 0px;
+          margin: 6px 0px 10px 0px;
           background-color: #676767; }
         .skillSection .skillItemGrid .skillItem_body .skillLevel {
           display: -webkit-inline-box;
@@ -495,8 +497,12 @@ nav {
             margin-right: 8px;
             background-color: #fff; }
           .skillSection .skillItemGrid .skillItem_body .skillLevel_text {
-            font-size: 1.3em;
-            line-height: 1.5em; }
+            font-size: 1.2em;
+            line-height: 1.5em;
+            font-weight: 300; }
+            .skillSection .skillItemGrid .skillItem_body .skillLevel_text_number {
+              font-weight: 400;
+              padding-left: 2px; }
 
 .workContainer {
   max-width: 1200px; }
@@ -514,14 +520,14 @@ nav {
     .workContainer_menu .menuItem:hover {
       cursor: pointer;
       padding-left: 18px;
-      color: #FAC748; }
+      color: #f2c95a; }
     .workContainer_menu .menuItem--active {
-      border-left: 8px solid #FAC748; }
+      border-left: 8px solid #f2c95a; }
       .workContainer_menu .menuItem--active:hover {
         cursor: default;
         padding-left: 12px; }
       .workContainer_menu .menuItem--active .menuItem_text {
-        color: #FAC748;
+        color: #f2c95a;
         font-weight: 600; }
     .workContainer_menu .menuItem_text {
       font-size: 1.4em;
@@ -589,7 +595,7 @@ nav {
           width: fit-content;
           margin-right: 10px;
           margin-bottom: 12px;
-          padding: 12px 15px;
+          padding: 6px 12px;
           background-color: #3A3939;
           border-radius: 22px;
           text-align: center; }
@@ -597,7 +603,7 @@ nav {
             margin-right: 0px; }
           .workContainer .workItem_content_tags .tag_text {
             font-size: 1.3em;
-            color: #FAC748; }
+            color: #f2c95a; }
             .workContainer .workItem_content_tags .tag_text_icon {
               margin-right: 5px; }
     .workContainer .workItem_hoverBox {
@@ -610,13 +616,13 @@ nav {
       border-top: 1px solid #4e4e4e;
       z-index: 999;
       background-size: 200% 100%;
-      background-image: linear-gradient(to right, #161616 50%, #FAC748 50%);
+      background-image: linear-gradient(to right, #161616 50%, #f2c95a 50%);
       -webkit-transition: background-position 0.3s;
       -moz-transition: background-position 0.3s;
       -o-transition: background-position 0.3s;
       transition: background-position 0.3s; }
       .workContainer .workItem_hoverBox_text {
-        color: #FAC748;
+        color: #f2c95a;
         font-size: 1.4em;
         -webkit-transition: color 0.3s;
         -moz-transition: color 0.3s;
