@@ -46,6 +46,8 @@ body {
         background-color: #4258CB; }
         .lightMode nav .navContainer .switchContainer .toggleSwitch_slider_switch_icon {
           color: #fff; }
+  .lightMode .sectionContainer .section .sectionText {
+    font-weight: 400; }
   .lightMode .sectionContainer .section .sectionHeading_h1 {
     color: #333; }
   .lightMode .sectionContainer .section .sectionHeading_underline {
@@ -82,7 +84,8 @@ body {
     .lightMode .workContainer .workItem:hover .workItem_hoverBox_text {
       color: #fff; }
     .lightMode .workContainer .workItem_content_p {
-      color: #333; }
+      color: #333;
+      font-weight: 400; }
     .lightMode .workContainer .workItem_content_tags .tag {
       border: none;
       background-color: rgba(71, 88, 189, 0.1);
@@ -311,7 +314,7 @@ nav {
   margin: 0px;
   margin-bottom: 20px;
   font-size: 1.4em;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.4em; }
 
 .sectionSubheading {
@@ -586,7 +589,7 @@ nav {
         color: #e9e9e9;
         font-size: 1.4em;
         line-height: 1.4em;
-        font-weight: 400; }
+        font-weight: 300; }
       .workContainer .workItem_content_tags {
         display: -webkit-inline-box;
         display: -ms-inline-flexbox;

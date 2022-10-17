@@ -163,6 +163,10 @@ body {
 
 		.section {
 
+			.sectionText {
+				font-weight: 400;
+			}
+
 			.sectionHeading {
 
 				&_h1 {
@@ -279,6 +283,7 @@ body {
 
 				&_p {
 					color: #333;
+					font-weight: 400;
 				}
 
 				&_tags {
@@ -628,7 +633,7 @@ nav {
 	margin: 0px;
 	margin-bottom: 20px;
 	font-size: 1.4em;
-	font-weight: 400;
+	font-weight: 300;
 	line-height: 1.4em;
 }
 
@@ -1061,7 +1066,7 @@ nav {
 				color: #e9e9e9;
 				font-size: 1.4em;
 				line-height: 1.4em;
-				font-weight: 400;
+				font-weight: 300;
 			}
 
 			&_tags {
