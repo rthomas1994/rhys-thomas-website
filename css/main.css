@@ -32,9 +32,9 @@ body {
     .lightMode nav .navContainer .navItem {
       background-color: #fff; }
       .lightMode nav .navContainer .navItem:hover .navItem_iconContainer_icon {
-        color: #4E4187; }
+        color: #4258CB; }
       .lightMode nav .navContainer .navItem:hover .navItem_text {
-        color: #4E4187; }
+        color: #4258CB; }
       .lightMode nav .navContainer .navItem_iconContainer_icon {
         color: #333; }
       .lightMode nav .navContainer .navItem_text {
@@ -49,7 +49,7 @@ body {
   .lightMode .sectionContainer .section .sectionHeading_h1 {
     color: #333; }
   .lightMode .sectionContainer .section .sectionHeading_underline {
-    background-color: #4E4187; }
+    background-color: #4258CB; }
   .lightMode .sectionContainer .section .infoCard_imageContainer .lightImage {
     display: block; }
   .lightMode .sectionContainer .section .infoCard_imageContainer .darkImage {
@@ -57,13 +57,13 @@ body {
   .lightMode .sectionContainer .section .infoCard_textContainer {
     background-color: #fff; }
   .lightMode .sectionContainer .section .buttonContainer_button {
-    background-image: linear-gradient(to right, #fff 50%, #4E4187 50%);
-    color: #4E4187 !important;
-    border: 2px solid #4E4187; }
+    background-image: linear-gradient(to right, #fff 50%, #4258CB 50%);
+    color: #4258CB !important;
+    border: 1px solid #4258CB; }
     .lightMode .sectionContainer .section .buttonContainer_button:hover .buttonContainer_button_text {
       color: #fff !important; }
     .lightMode .sectionContainer .section .buttonContainer_button_text {
-      color: #4E4187 !important; }
+      color: #4258CB !important; }
   .lightMode .sectionContainer .section .skillSection .skillItem {
     background-color: #fff; }
     .lightMode .sectionContainer .section .skillSection .skillItem--white {
@@ -85,16 +85,16 @@ body {
       color: #333; }
     .lightMode .workContainer .workItem_content_tags .tag {
       border: none;
-      background-color: #f6f4ff;
-      border: 1px solid #4E4187; }
+      background-color: rgba(71, 88, 189, 0.1);
+      border: 0px solid #4258CB; }
       .lightMode .workContainer .workItem_content_tags .tag_text {
         font-weight: 600;
-        color: #4E4187; }
+        color: #4258CB; }
     .lightMode .workContainer .workItem_hoverBox {
-      background-image: linear-gradient(to right, #fff 50%, #4E4187 50%);
+      background-image: linear-gradient(to right, #fff 50%, #4258CB 50%);
       border-top: 1px solid #eaeaea; }
       .lightMode .workContainer .workItem_hoverBox_text {
-        color: #4E4187; }
+        color: #4258CB; }
   .lightMode .footer {
     background-color: #fff; }
     .lightMode .footer_icons .iconContainer {
@@ -596,7 +596,7 @@ nav {
           margin-right: 10px;
           margin-bottom: 12px;
           padding: 6px 12px;
-          background-color: #3A3939;
+          background-color: #303030;
           border-radius: 22px;
           text-align: center; }
           .workContainer .workItem_content_tags .tag:last-of-type {

@@ -117,11 +117,11 @@ body {
 				&:hover {
 
 					.navItem_iconContainer_icon {
-						color: #4E4187;
+						color: $light-mode-blue;
 					}
 
 					.navItem_text {
-						color: #4E4187;
+						color: $light-mode-blue;
 					}
 
 				}
@@ -170,7 +170,7 @@ body {
 				}
 
 				&_underline {
-					background-color: #4E4187;
+					background-color: $light-mode-blue;
 				}
 
 			}
@@ -198,9 +198,9 @@ body {
 			.buttonContainer {
 
 				&_button {
-					background-image: linear-gradient(to right, #fff 50%, #4E4187 50%);
-					color: #4E4187 !important;
-					border: 2px solid #4E4187;
+					background-image: linear-gradient(to right, #fff 50%, $light-mode-blue 50%);
+					color: $light-mode-blue !important;
+					border: 1px solid $light-mode-blue;
 
 					&:hover {
 
@@ -211,7 +211,7 @@ body {
 					}
 
 					&_text {
-						color: #4E4187 !important;
+						color: $light-mode-blue !important;
 					}					
 
 				}
@@ -285,12 +285,12 @@ body {
 
 					.tag {
 						border: none;
-						background-color: #f6f4ff;
-						border: 1px solid #4E4187;
+						background-color: rgba(71,88,189,.1);
+						border: 0px solid $light-mode-blue;
 
 						&_text {
 							font-weight: 600;
-							color: #4E4187;
+							color: $light-mode-blue;
 						}
 
 					}
@@ -300,11 +300,11 @@ body {
 			}
 
 			&_hoverBox {
-				background-image: linear-gradient(to right, #fff 50%, #4E4187 50%);
+				background-image: linear-gradient(to right, #fff 50%, $light-mode-blue 50%);
 				border-top: 1px solid #eaeaea;
 
 				&_text {
-					color: #4E4187;
+					color: $light-mode-blue;
 				}
 
 			}
@@ -1072,7 +1072,7 @@ nav {
 					margin-bottom: 12px;
 					padding: 6px 12px;
 					// border: 1px solid $dark-mode-yellow;
-					background-color: #3A3939;
+					background-color: #303030;
 					border-radius: 22px;
 					text-align: center;
 
