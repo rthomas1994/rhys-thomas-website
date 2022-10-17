@@ -574,8 +574,7 @@ nav {
       padding-bottom: 10px; }
       .workContainer .workItem_content_h2 {
         display: block;
-        margin: 0px;
-        margin-bottom: 12px;
+        margin: 4px 0px 16px 0px;
         font-size: 2em;
         line-height: 1.2em;
         text-decoration: underline;
