@@ -1365,26 +1365,6 @@ nav {
 
 	}
 
-}
-
-
-@media only screen and (max-width: 500px) {
-
-	.infoCard {
-
-		&_imageContainer {
-			margin: auto;
-			margin-bottom: 30px;
-
-			&_image {
-				max-width: 160px;
-				// margin: auto;
-			}
-
-		}
-
-	}
-
 	.workContainer {
 
 		.workItem {
@@ -1399,6 +1379,26 @@ nav {
 					display: none;
 				}
 
+			}
+
+		}
+
+	}
+
+}
+
+
+@media only screen and (max-width: 500px) {
+
+	.infoCard {
+
+		&_imageContainer {
+			margin: auto;
+			margin-bottom: 30px;
+
+			&_image {
+				max-width: 160px;
+				// margin: auto;
 			}
 
 		}
