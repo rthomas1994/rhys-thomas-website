@@ -564,7 +564,11 @@ nav {
         max-width: 100%;
         display: block;
         margin: auto;
-        border-radius: 5px 0px 0px 0px; }
+        border-radius: 5px 0px 0px 0px;
+        -webkit-transition: transform 0.4s;
+        -moz-transition: transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s; }
       .workContainer .workItem_imageContainer #client-logos-mobile {
         display: none; }
     .workContainer .workItem_content {

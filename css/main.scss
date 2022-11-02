@@ -1031,11 +1031,10 @@ nav {
 			&_image {
 				width: 100%;
 				max-width: 100%;
-
 				display: block;
 				margin: auto;
 				border-radius: 5px 0px 0px 0px;
-				// @include transition(transform, 0.4s);
+				@include transition(transform, 0.4s);
 			}
 
 			#client-logos-mobile {
