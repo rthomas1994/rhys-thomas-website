@@ -31,7 +31,7 @@ $(document).ready(function() {
     });
 
     // Add active class for workItem on hover
-    $(".work_button").hover(function() {
+    $(".workItem").hover(function() {
         $(this).closest(".workItem").toggleClass("workItem--active");
     });
 
@@ -60,9 +60,9 @@ $(document).ready(function() {
     });
 
     // Hover state on image for work section
-    $(".workItem_hoverBox").hover(function() {
-        $(this).closest(".workItem").toggleClass("workItem--active");
-    });
+    // $(".workItem_hoverBox").hover(function() {
+    //     $(this).closest(".workItem").toggleClass("workItem--active");
+    // });
 
 
 
