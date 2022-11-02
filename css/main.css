@@ -546,8 +546,6 @@ nav {
       margin-bottom: 0px; }
     .workContainer .workItem:hover {
       cursor: pointer; }
-      .workContainer .workItem:hover .workItem_content_h2 {
-        padding-left: 5px; }
       .workContainer .workItem:hover .workItem_hoverBox {
         background-position: -100% 0; }
         .workContainer .workItem:hover .workItem_hoverBox_text {
