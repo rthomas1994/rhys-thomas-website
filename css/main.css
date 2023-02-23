@@ -344,8 +344,10 @@ body.dark {
   .about__bio h3 {
     font-size: 1em; }
   .about__bio h2 {
-    font-size: 2em; }
+    font-size: 2.2em; }
   .about__bio p {
+    font-size: 1em; }
+  .about__bio .button {
     font-size: 1em; } }
 section#work {
   background-color: rgba(252, 163, 17, 0.12); }
