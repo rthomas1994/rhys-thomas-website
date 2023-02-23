@@ -59,91 +59,91 @@ $(document).ready(function() {
 	const skillData = [
 		{
 			skill: 'Figma',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/figma-logo.png',
+			icon: 'media/figma-logo.png',
 			alt: 'Figma icon',
 			level: '5+ years experience',
 			type: 'design'
 		},
 		{
 			skill: 'Sketch',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/sketch-logo.png',
+			icon: 'media/sketch-logo.png',
 			alt: 'Sketch app icon',
 			level: '2-3 years experience',
 			type: 'design'
 		},
 		{
 			skill: 'Adobe CC',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/adobe-cc-logo.png',
+			icon: 'media/adobe-cc-logo.png',
 			alt: 'Adobe CC icon',
 			level: '2-3 years experience',
 			type: 'design'
 		},
 		{
 			skill: 'Web Accessibility',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/accessibility-logo.png',
+			icon: 'media/accessibility-logo.png',
 			alt: 'Web accessibility icon',
 			level: '2-3 years experience',
 			type: 'design'
 		},
 		{
 			skill: 'InVision',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/invision-logo.png',
+			icon: 'media/invision-logo.png',
 			alt: 'InVision icon',
 			level: '1-2 years experience',
 			type: 'design'
 		},
 		{
 			skill: 'HTML5',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/html-logo.png',
+			icon: 'media/html-logo.png',
 			alt: 'CSS3 icon',
 			level: '5+ years experience',
 			type: 'development'
 		},
 		{
 			skill: 'CSS3',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/css-logo.png',
+			icon: 'media/css-logo.png',
 			alt: 'CSS3 icon',
 			level: '5+ years experience',
 			type: 'development'
 		},
 		{
 			skill: 'SASS/SCSS',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/sass-logo.png',
+			icon: 'media/sass-logo.png',
 			alt: 'SASS icon',
 			level: '5+ years experience',
 			type: 'development'
 		},
 		{
 			skill: 'JavaScript',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/javascript-logo.png',
+			icon: 'media/javascript-logo.png',
 			alt: 'JavaScript icon',
 			level: '3-4 years experience',
 			type: 'development'
 		},
 		{
 			skill: 'jQuery',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/jquery-logo.png',
+			icon: 'media/jquery-logo.png',
 			alt: 'jQuery icon',
 			level: '3-4 years experience',
 			type: 'development'
 		},
 		{
 			skill: 'GitHub',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/github-logo.png',
+			icon: 'media/github-logo.png',
 			alt: 'GitHub icon',
 			level: '2-3 years experience',
 			type: 'development'
 		},
 		{
 			skill: 'Bootstrap',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/bootstrap-logo.png',
+			icon: 'media/bootstrap-logo.png',
 			alt: 'Bootstrap icon',
 			level: '2-3 years experience',
 			type: 'development'
 		},
 		{
 			skill: 'ReactJS',
-			icon: '/Users/Rhys/Pictures/rhys-website-media/react-logo.png',
+			icon: 'media/react-logo.png',
 			alt: 'ReactJS icon',
 			level: '0-1 years experience',
 			type: 'development'
