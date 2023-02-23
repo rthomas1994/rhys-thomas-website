@@ -175,30 +175,40 @@ section {
 	display: block;
 	width: fit-content;
 	cursor: pointer;
-	background: $primary-light;
-	background-size: 200% 100%;
-	background-image: linear-gradient(to right, #2C3FA0, #4258CB);
-	border: 0px;
-	// border-color: $primary-light;
 	border-radius: $border-radius-buttons;
 	color: $white;
-	padding: 8px 16px;
+	padding: 6px 20px;
+	font-size: 1.1em;
+	font-weight: 400;
+	background-color: $white;
+	border: 1px solid $primary-light;
+	color: $primary-light;
 	transition: color .2s ease,
-							background-position .2s ease;
+							background-position .2s ease,
+							background-color .2s ease;
 
 	&--primary {
-		font-size: 1.1em;
-		font-weight: 400;
 		padding: 8px 20px;
+		background: $primary-light;
+		background-size: 200% 100%;
+		background-image: linear-gradient(to right, #2C3FA0, #4258CB);
+		border: 0px;
+		color: $white;
+		
+		&:hover {
+			background-position: -100% 0;
+		}
+
 	}
 
 	&:hover {
-		background-position: -100% 0;
+		background-color: $primary-light;
+		color: $white;
 	}
 
 	i {
 		font-size: 1.2em;
-		margin-left: 4px;
+		margin-left: 8px;
 	}
 
 }

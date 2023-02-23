@@ -147,7 +147,8 @@ nav.desktop-nav {
   width: 280px;
   height: 100vh;
   box-shadow: -10px 4px 28px 0px rgba(4, 8, 15, 0.08);
-  transition: all .2s ease; }
+  transition: all .2s ease;
+  padding: 0px 24px; }
   .mobile-nav--visible {
     right: 0px; }
   .mobile-nav__header {
@@ -156,17 +157,26 @@ nav.desktop-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px 20px 16px 24px;
+    padding: 16px 0px;
     margin-bottom: 32px; }
   .mobile-nav__links .nav-links {
     display: block;
-    padding-left: 36px; }
+    padding-left: 12px;
+    margin-bottom: 48px; }
     .mobile-nav__links .nav-links .nav-link {
       display: block;
       margin-bottom: 32px;
       font-size: 1.3em; }
       .mobile-nav__links .nav-links .nav-link:last-of-type {
         margin-bottom: 0px; }
+  .mobile-nav .experience-links {
+    border: 0px;
+    border-top: 1px solid rgba(4, 8, 15, 0.05);
+    border-radius: 0px;
+    padding: 24px 0px 0px 0px;
+    position: absolute;
+    bottom: 0px;
+    width: calc(100% - 48px); }
 
 body.dark nav.desktop-nav {
   background-color: #04080F;
@@ -818,23 +828,30 @@ section {
   display: block;
   width: fit-content;
   cursor: pointer;
-  background: #4258CB;
-  background-size: 200% 100%;
-  background-image: linear-gradient(to right, #2C3FA0, #4258CB);
-  border: 0px;
   border-radius: 6px;
   color: #ffffff;
-  padding: 8px 16px;
-  transition: color .2s ease, background-position .2s ease; }
+  padding: 6px 20px;
+  font-size: 1.1em;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #4258CB;
+  color: #4258CB;
+  transition: color .2s ease, background-position .2s ease, background-color .2s ease; }
   .button--primary {
-    font-size: 1.1em;
-    font-weight: 400;
-    padding: 8px 20px; }
+    padding: 8px 20px;
+    background: #4258CB;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, #2C3FA0, #4258CB);
+    border: 0px;
+    color: #ffffff; }
+    .button--primary:hover {
+      background-position: -100% 0; }
   .button:hover {
-    background-position: -100% 0; }
+    background-color: #4258CB;
+    color: #ffffff; }
   .button i {
     font-size: 1.2em;
-    margin-left: 4px; }
+    margin-left: 8px; }
 
 body.dark {
   background-color: #04080F;
