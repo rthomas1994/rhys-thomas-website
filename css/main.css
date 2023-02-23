@@ -188,7 +188,7 @@ body.dark .menu-button i {
     display: none; } }
 @media only screen and (max-width: 768px) {
   nav.desktop-nav {
-    height: 64px;
+    height: 72px;
     padding: 0px 16px; }
 
   .nav-links-container {
@@ -339,7 +339,7 @@ body.dark {
       margin: auto; } }
 @media only screen and (max-width: 650px) {
   .about.section-content {
-    padding: 0px 24px 32px 24px !important; }
+    padding: 8px 24px 32px 24px !important; }
   .about__bio h3 {
     font-size: 1.2em; }
   .about__bio h2 {
@@ -841,7 +841,7 @@ body.dark {
 
 @media only screen and (max-width: 760px) {
   html {
-    scroll-padding-top: 72px; } }
+    scroll-padding-top: 80px; } }
 @media only screen and (max-width: 650px) {
   .section-content {
     padding-left: 24px !important;

@@ -295,14 +295,8 @@ body.dark {
 
 @media only screen and (max-width: 768px) {
 	nav.desktop-nav {
-		height: 64px;
+		height: 72px;
 		padding: 0px 16px;
-	}
-	.nav-bio {
-		img {
-			// height: 40px;
-			// width: 40px;
-		}
 	}
 	.nav-links-container {
 		gap: 16px;
@@ -311,8 +305,6 @@ body.dark {
 		display: none;
 	}
 	.theme-button {
-		// height: 40px;
-		// width: 40px;
 		i {
 			font-size: 20px;
 		}
