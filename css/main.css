@@ -128,14 +128,15 @@ nav.desktop-nav {
   padding-top: 2px;
   cursor: pointer; }
   .menu-button i {
-    font-size: 2.2em;
+    font-size: 2.6em;
     color: #04080F; }
   .menu-button--open {
     display: none; }
   .menu-button--close {
-    padding-top: 0px; }
+    padding-top: 0px;
+    margin-bottom: 4px; }
     .menu-button--close i {
-      font-size: 1.8em; }
+      font-size: 2em; }
 
 .mobile-nav {
   background-color: #ffffff;
@@ -188,8 +189,12 @@ body.dark .menu-button i {
     display: none; } }
 @media only screen and (max-width: 768px) {
   nav.desktop-nav {
-    height: 72px;
+    height: 88px;
     padding: 0px 16px; }
+
+  .nav-bio img {
+    height: 56px;
+    width: 56px; }
 
   .nav-links-container {
     gap: 16px; }
@@ -197,8 +202,11 @@ body.dark .menu-button i {
   nav.desktop-nav .nav-links {
     display: none; }
 
-  .theme-button i {
-    font-size: 20px; }
+  .theme-button {
+    height: 56px;
+    width: 56px; }
+    .theme-button i {
+      font-size: 20px; }
 
   .menu-button--open {
     display: -webkit-box;
@@ -841,7 +849,7 @@ body.dark {
 
 @media only screen and (max-width: 760px) {
   html {
-    scroll-padding-top: 80px; } }
+    scroll-padding-top: 88px; } }
 @media only screen and (max-width: 650px) {
   .section-content {
     padding-left: 24px !important;
