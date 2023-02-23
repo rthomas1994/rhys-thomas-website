@@ -2,10 +2,26 @@
 
 $(document).ready(function() {
 
+	// Get current window height
+	var windowHeight = $(window).height();
+	setMobileNavHeight(windowHeight);
+
+	function setMobileNavHeight(height) {
+		$("aside.mobile-nav").css("height", height);
+	}
+
+	// Reset every time window resizes
+	$(window).resize(function() {
+		windowHeight = $(window).height();
+		setMobileNavHeight(windowHeight);
+	});
+
 	var currentYear = new Date().getFullYear();
 
 	// Set copyright year
 	$("#copyright-year").html(currentYear);
+
+
 
 	// if ($(window).width() < 700) {
 	// 	scrollOffset = 120;

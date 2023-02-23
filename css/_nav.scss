@@ -200,7 +200,8 @@ nav.desktop-nav {
 	right: -280px; // Off screen to slide in
 	z-index: 999999;
 	width: 280px;
-	height: 100vh;
+	// height: 100vh;
+	min-height: 620px;
 	box-shadow: -10px 4px 28px 0px rgba($headings-light, .08);
 	@include transitionAll;
 	padding: 0px 24px;
