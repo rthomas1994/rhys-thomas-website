@@ -150,6 +150,16 @@ body.dark {
   
 			&__image {
 				background: rgba($white, .05) !important;
+
+				&--white {
+
+					img {
+						background-color: $white;
+						border-radius: 6px;
+					}
+
+				}
+
 			}
 
 			&__info {
