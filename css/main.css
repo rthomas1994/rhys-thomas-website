@@ -704,9 +704,7 @@ body {
   font-size: 16px;
   color: rgba(4, 8, 15, 0.8);
   font-weight: 300;
-  transition: background-color .2s ease, color .2s ease;
-  background-image: url("C:/Users/Rhys/Pictures/rhys-website-media/blob-scene-haikei.svg");
-  background-size: cover; }
+  transition: background-color .2s ease, color .2s ease; }
 
 .italic-text {
   font-style: italic; }
