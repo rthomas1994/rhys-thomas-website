@@ -160,7 +160,8 @@ nav.desktop-nav {
     margin-bottom: 32px; }
   .mobile-nav__links .nav-links {
     display: block;
-    text-align: center; }
+    text-align: center;
+    padding-left: 36px; }
     .mobile-nav__links .nav-links .nav-link {
       display: block;
       margin-bottom: 32px;
@@ -234,8 +235,7 @@ body.dark .menu-button i {
     background-color: #ffffff;
     border-radius: 16px;
     border: 1px solid rgba(4, 8, 15, 0.4);
-    padding: 24px 0px 0px 0px;
-    max-width: 320px; }
+    padding: 24px 0px 0px 0px; }
     .about .career-path__image {
       width: 120px;
       height: 120px;
@@ -705,7 +705,9 @@ body {
   font-size: 16px;
   color: rgba(4, 8, 15, 0.8);
   font-weight: 300;
-  transition: background-color .2s ease, color .2s ease; }
+  transition: background-color .2s ease, color .2s ease;
+  background-image: url("C:/Users/Rhys/Pictures/rhys-website-media/blob-scene-haikei.svg");
+  background-size: cover; }
 
 .italic-text {
   font-style: italic; }
