@@ -842,6 +842,9 @@ body.dark {
   body.dark .section-heading h1 {
     color: #fff; }
 
+@media only screen and (max-width: 820px) {
+  section {
+    min-height: 800px; } }
 @media only screen and (max-width: 760px) {
   html {
     scroll-padding-top: 88px; } }
