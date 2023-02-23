@@ -264,6 +264,10 @@ body.dark {
 			margin: auto;
 		}
 
+		&.section-content {
+			padding-bottom: 80px !important;
+		}
+
 	}
 
 }
@@ -274,7 +278,6 @@ body.dark {
 
 		&.section-content {
 			padding: 24px 24px 32px 24px !important;
-
 		}
 		
 		&__bio {
