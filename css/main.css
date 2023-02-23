@@ -575,8 +575,23 @@ body.dark .skill__info span {
   color: rgba(255, 255, 255, 0.8); }
 
 @media only screen and (max-width: 650px) {
+  .skill-filters .filter-item {
+    font-size: 1em; }
+
   .skills-container {
-    grid-row-gap: 32px; } }
+    grid-row-gap: 32px; }
+    .skills-container .skill {
+      grid-template-columns: 64px 1fr; }
+      .skills-container .skill__icon {
+        height: 64px;
+        width: 64px; }
+        .skills-container .skill__icon img {
+          width: 40px;
+          height: 40px; }
+      .skills-container .skill__info p {
+        font-size: 1.2em; }
+      .skills-container .skill__info span {
+        font-size: 1em; } }
 section#experience {
   background-color: rgba(252, 163, 17, 0.12); }
 

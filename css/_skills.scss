@@ -189,8 +189,45 @@ body.dark {
 
 @media only screen and (max-width: 650px) {
 
+	.skill-filters {
+
+		.filter-item {
+			font-size: 1em;
+		}
+
+	}
+
 	.skills-container {
 		grid-row-gap: 32px;
+
+		.skill {
+			grid-template-columns: 64px 1fr;
+
+			&__icon {
+				height: 64px;
+				width: 64px;
+
+				img {
+					width: 40px;
+					height: 40px;
+				}
+
+			}
+
+			&__info {
+
+				p {
+					font-size: 1.2em;
+				}
+
+				span {
+					font-size: 1em;
+				}
+
+			}
+
+		}
+
 	}
 
 }
