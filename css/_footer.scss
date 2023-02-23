@@ -1,0 +1,56 @@
+////////////////////////////////
+/////////---Footer---///////////
+////////////////////////////////
+
+footer {
+	
+	.nav-bio {
+		padding-top: 18%;
+		padding-bottom: 32px;
+		justify-content: center;
+		gap: 12px;
+
+		i {
+			font-size: 1.4em;
+		}
+
+		span {
+			font-weight: 400;
+		}
+
+	}
+
+}
+
+/////////////////////////////////////////////
+////////////---Media Queries---//////////////
+/////////////////////////////////////////////
+
+@media only screen and (max-width: 800px) {
+
+	footer {
+
+		.nav-bio {
+			// padding-top: 160px;
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 650px) {
+
+	footer {
+
+		.nav-bio {
+			padding-top: 100px;
+
+			h3 {
+				font-size: 1.2em;
+			}
+
+		}
+
+	}
+
+}

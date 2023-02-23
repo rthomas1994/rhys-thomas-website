@@ -1,1215 +1,253 @@
-//////////////////////////////
-///////////Mixins/////////////
-//////////////////////////////
+////////////////////////////////////
+///////////---Imports---////////////
+////////////////////////////////////
+@import './variables';
+@import './nav';
+@import './about';
+@import './work';
+@import './skills';
+@import './experience';
+@import './footer';
 
-@mixin flex {
-	display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+/////////////////////////////////////
+///////////---General---/////////////
+/////////////////////////////////////
+
+
+////////////////////////////////////
+////////////---Body---//////////////
+////////////////////////////////////
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: $nav-height;
 }
-
-@mixin inlineFlex {
-	display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-}
-
-@mixin grid {
-	display: -ms-grid;
-    display: grid;
-}
-
-.iconContainer {
-	@include flex;
-	align-items: center;
-	justify-content: center;
-}
-
-@mixin font-fira-sans {
-	font-family: "Fira Sans", "sans-serif";
-}
-
-@mixin font-source-sans {
-	font-family: "Source Sans Pro", "sans-serif";
-}
-
-@mixin transition($property, $time) {
-	-webkit-transition: $property $time;
-	   -moz-transition: $property $time;
-	     -o-transition: $property $time;
-	        transition: $property $time;
-}
-
-@mixin transitionAll($time) {
-	-webkit-transition: all $time;
-	   -moz-transition: all $time;
-	     -o-transition: all $time;
-	        transition: all $time;
-}
-
-@mixin translateX($scale) {
-	-webkit-transform: translateX($scale);
-        -ms-transform: translateX($scale);
-            transform: translateX($scale);
-}
-
-@mixin translateY($scale) {
-	-webkit-transform: translateY($scale);
-        -ms-transform: translateY($scale);
-            transform: translateY($scale);
-}
-
-div, nav {
-	box-sizing: border-box;
-}
-
-////////////////////////////////
-////////////Colors//////////////
-////////////////////////////////
-
-$dark-mode-yellow: #f2c95a;
-$skill-item-green: #60992D;
-$skill-item-orange: #EF8A17;
-$light-mode-blue: #4258CB;
-
-//////////////////////////////
-////////////Body//////////////
-//////////////////////////////
 
 body {
-	width: 100%;
-	background-color: #282828;
-	margin: 0px;
-	@include font-fira-sans;
-	font-size: 12px;
-	color: #e1e1e1;
+	font-family: $text-font;
+	background-color: $background-light;
+	font-size: 16px;
+	color: $text-light;
+	font-weight: 300;
+	transition: background-color .2s ease, color .2s ease;
 }
 
-.lightMode {
-	background-color: #f4f4f4;
-	color: #333;
-
-	.whiteText {
-		color: #333 !important;
-	}
-
-	.link {
-		color: #1b34a7 !important;
-		// color: #333 !important;
-		text-decoration: underline !important;
-
-		&:hover {
-			color: #1b34a7 !important;
-			// color: #333 !important;
-			text-decoration: underline !important;
-		}
-
-	}
-
-	nav {
-		background-color: #e2e2e2;
-
-		.navContainer {
-
-			.navItem {
-				background-color: #fff;
-
-				&:hover {
-
-					.navItem_iconContainer_icon {
-						color: $light-mode-blue;
-					}
-
-					.navItem_text {
-						color: $light-mode-blue;
-					}
-
-				}
-
-				&_iconContainer_icon {
-					color: #333;
-				}
-
-				&_text {
-					color: #333;
-					font-weight: 600;
-				}
-
-			}
-
-			.switchContainer {
-
-				.toggleSwitch_slider {
-					background-color: #fff;
-
-					&_switch {
-						background-color: $light-mode-blue;
-
-						&_icon {
-							color: #fff;
-						}
-
-					}
-
-				}
-
-			}
-
-		}
-
-	}
-
-	.sectionContainer {
-
-		.section {
-
-			.sectionText {
-				font-weight: 400;
-			}
-
-			.sectionHeading {
-
-				&_h1 {
-					color: #333;
-				}
-
-				&_underline {
-					background-color: $light-mode-blue;
-				}
-
-			}
-
-			.infoCard {
-
-				&_imageContainer {
-
-					.lightImage {
-						display: block;
-					}
-
-					.darkImage {
-						display: none;
-					}
-
-				}
-
-				&_textContainer {
-					background-color: #fff;
-				}
-
-			}
-
-			.buttonContainer {
-
-				&_button {
-					background-image: linear-gradient(to right, #fff 50%, $light-mode-blue 50%);
-					color: $light-mode-blue !important;
-					border: 1px solid $light-mode-blue;
-
-					&:hover {
-
-						.buttonContainer_button_text {
-							color: #fff !important;
-						}
-
-					}
-
-					&_text {
-						color: $light-mode-blue !important;
-					}					
-
-				}
-
-			}
-
-			.skillSection {
-
-				.skillItem {
-					background-color: #fff;
-
-					&--white {
-						border-color: #b1b1b1 !important;
-
-						.skillItem_body {
-
-							.skillLevel_icon {
-								background-color: #b1b1b1 !important;
-							}
-
-						}
-
-					}
-
-					&_iconContainer {
-						background-color: #e0e0e0;
-
-						&_icon {
-							color: #333;
-						}
-
-					}
-
-					&_body {
-
-						&_divider {
-							background-color: #eaeaea;
-						}
-
-					}
-
-				}
-
-			}
-
-		}
-
-	}
-
-	.workContainer {
-
-		.workItem {
-			background-color: #fff;
-			box-shadow: 0px 2px 8px #e3e3e3;
-
-			&:hover {
-
-				.workItem_hoverBox_text {
-					color: #fff;
-				}
-				
-			}
-
-			&_content {
-
-				&_p {
-					color: #333;
-					font-weight: 400;
-				}
-
-				&_tags {
-
-					.tag {
-						border: none;
-						background-color: rgba(71,88,189,.1);
-						border: 0px solid $light-mode-blue;
-
-						&_text {
-							font-weight: 600;
-							color: $light-mode-blue;
-						}
-
-					}
-
-				}
-
-			}
-
-			&_hoverBox {
-				background-image: linear-gradient(to right, #fff 50%, $light-mode-blue 50%);
-				border-top: 1px solid #eaeaea;
-
-				&_text {
-					color: $light-mode-blue;
-				}
-
-			}
-
-		}
-
-	}
-
-	.footer {
-		background-color: #fff;
-
-		&_icons {
-
-			.iconContainer {
-				background-color: #e2e2e2;
-
-				&:hover {
-					background-color: #d2d2d2;				
-				}
-
-				&_icon {
-					color: #333;
-				}
-
-			}
-
-		}
-
-		&_text {
-			color: #333;
-		}
-
-	}
-
-}
-
-.overflowHidden {
-	overflow: hidden;
-}
-
-.boldText {
-	font-weight: 700 !important;
-}
-
-.italicText {
+.italic-text {
 	font-style: italic;
 }
 
-.whiteText {
-	color: #fff;
-}
-
-.displayNone {
+.display-none {
 	display: none !important;
 }
 
-.noUnderline {
-	text-decoration: none !important;
-}
-
-.link {
-	// color: #1b34a7 !important;
-	color: $dark-mode-yellow !important;
-	text-decoration: underline !important;
-
-	&:hover {
-		// color: #1b34a7 !important;
-		color: #fff !important;
-		text-decoration: underline !important;
-	}
-
-}
-
-.h1, .h2, .h3, .h4, .h5 {
-	@include font-source-sans;
-}
-
-.paddingLeft5 {
-	padding-left: 3px;
-}
-
-//////////////////////////////
-///////////Layout/////////////
-//////////////////////////////
-
-.skipNav {
-    position: absolute;
-    left: -120px;
-    top: 20px;
-	font-size: 1.2em;
-    line-height: 1.5em;
-    color: #fff;
-
-    &:focus {
-    	left: 140px;
-    }
-
-}
-
-nav {
-	width: 110px;
-	height: 100vh;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: 999;
-	background-color: #161616;
-	padding: 15px;
-}
-
-.navContainer {
-	// max-width: 700px;
-	// display: block;
-	// margin: auto;
-	position: absolute;
-	top: 50%;
-	@include translateY(-50%);
-	
-	.navItem {
-		height: 80px;
-		width: 80px;
-		@include inlineFlex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 5px;
-		background-color: #282828;
-		margin-bottom: 20px;
-		padding-top: 5px;
-		text-align: center;
-		text-decoration: none !important;
-		@include transition(width, 0.2s);
-
-		&:hover {
-			cursor: pointer;
-			width: 85px;
-			color: inherit !important;
-
-			.navItem_iconContainer_icon {
-				color: $dark-mode-yellow;
-			}
-
-			.navItem_text {
-				color: $dark-mode-yellow;
-			}
-
-		}
-
-		&--skip {
-			height: 50px;
-			padding-top: 0px;
-
-			.navItem_text {
-				font-size: 1em;
-			}
-
-		}
-
-		// &:last-of-type {
-		// 	margin-bottom: 0px;
-		// }
-
-		&_iconContainer {
-			margin-bottom: 10px;
-
-			&_icon {
-				font-size: 22px;
-				color: #fff;
-				@include transition(color, 0.2s);
-			}
-
-		}
-
-		&_text {
-			display: block;
-			font-size: 1.2em;
-			color: #fff;
-			@include transition(color, 0.2s);
-		}
-
-	}
-
-	.switchContainer {
-		@include inlineFlex;
-		margin-left: 10px;
-
-		&_iconContainer {
-			margin-right: 5px;
-			@include inlineFlex;
-			align-items: center;
-			justify-content: center;
-
-			&_icon {
-				font-size: 26px;
-			}
-
-		}
-
-		.toggleSwitch {
-			position: relative;
-			display: inline-block;
-			width: 60px;
-			height: 36px;
-
-			&_slider {
-				position: absolute;
-				cursor: pointer;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: #3e3e3e;
-				border-radius: 34px;
-				line-height: 35px;
-				font-size: 1.1em;
-				color: #282828;
-				@include transitionAll(0.3s);
-
-				&--checked {
-					background-color: $dark-mode-yellow;
-
-					.toggleSwitch_slider_switch {
-						@include translateX(25px);
-						background-color: #282828;
-
-						&_icon {
-							color: $dark-mode-yellow;
-						}
-
-						#dark_icon {
-							display: block;
-						}
-
-						#light_icon {
-							display: none;
-						}
-
-					}
-					
-				}
-
-				&_switch {
-					position: absolute;
-					height: 26px;
-					width: 26px;
-					left: 5px;
-					bottom: 5px;
-					border-radius: 50%;
-					background-color: $dark-mode-yellow;
-					@include transitionAll(0.4s);
-
-					&_icon {
-						font-size: 17px;
-						padding-top: 2px;
-						color: #282828;
-					}
-
-					#dark_icon {
-						display: none;
-					}
-
-					#light_icon {
-						display: block;
-					}
-
-				}
-
-			}
-
-			input {
-				opacity: 0;
-				width: 0;
-				height: 0;
-			}
-
-		}
-
-	}
-
-}
-
-.pageContent {
-	padding-left: 110px;
-}
-
-.sectionContainer {
-	// position: relative;
-	// padding: 40px;
-	// padding-top: 60px;
-
-	.section {
-		width: 85%;
-		max-width: 900px;
-		margin: 60px auto;
-		margin-bottom: 120px;
-	}
-
-}
-
-.sectionHeading {
-	@include font-source-sans;
-	margin: 30px 0px;
-	margin-bottom: 40px;
-
-	&_h1 {
-		margin: 0px;
-		font-size: 4.5em;
-		color: #fff;
-	}
-
-	&_underline {
-		width: 75px;
-		height: 2px;
-		margin-top: 15px;
-		background-color: $dark-mode-yellow;
-	}
-	
-}
-
-.sectionText {
-	// max-width: 900px;
-	margin: 0px;
-	margin-bottom: 20px;
-	font-size: 1.4em;
-	font-weight: 300;
-	line-height: 1.4em;
-}
-
-.sectionSubheading {
-	@include font-source-sans;
-	margin: 0px;
-	margin-bottom: 10px;
-	font-size: 2.4em;
+.bold-text {
 	font-weight: 600;
 }
 
-.infoCard {
-	@include inlineFlex;
-	margin-bottom: 30px;
+.bold-text-500 {
+	font-weight: 500;
+}
 
-	&_imageContainer {
-		margin: auto;
-		margin-right: 30px;
+.color-complementary-2 {
+	color: $complementary-2-light;
+}
 
-		&_image {
-			width: 100%;
-			max-width: 180px;
-			display: block;
-			margin: auto;
-			border-radius: 100%;
-			// border: 1px solid #fff;
-		}
+.color-complementary {
+	color: $complementary-light;
+}
 
-		.lightImage {
-			display: none;
-		}
+.text-link {
+	text-decoration: underline;
+	color: $primary-light;
+	font-weight: 400;
+}
 
-	}
+.h1, .h2, .h3, .h4, .h5 {
+	font-family: $heading-font;
+	transition: color .2s ease;
+}
 
-	&_textContainer {
-		padding: 15px 20px;
-		background-color: #3e3e3e;
-		border-radius: 5px;
-		margin: auto;
+a, button, label {
 
-		&_text {
-			display: block;
-			margin: 0px;
-			margin-bottom: 10px;
-			font-size: 1.4em;
-			line-height: 1.5em;
-			font-weight: 300;
-
-			&:last-of-type {
-				margin-bottom: 0px;
-			}
-
-			&_icon {
-			    width: 20px;
-			    margin-right: 10px;
-			    text-align: center;
-			}
-
-			.fa-user {
-				font-size: 1.1em;
-			}
-
-			.fa-dekstop {
-				font-size: 0.9em;
-			}
-
-		}
-
+	&:focus-visible {
+		@include focusStyling;
 	}
 
 }
 
-.buttonContainer {
+////////////////////////////////////
+///////////---Layout---/////////////
+////////////////////////////////////
 
-	&--inlineFlex {
-		@include inlineFlex;
-
-		.buttonContainer_button {
-			margin-right: 20px;
-
-			&:last-of-type {
-				margin-right: 0px;
-			}
-
-		}
-
-	}
-
-	&--grid {
-		@include grid;
-		-ms-grid-columns: 1fr 1fr;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 15px;
-	}
-
-	&_button {
-		@include flex;
-		align-items: center;
-		justify-content: center;
-		width: 200px;
-		height: 50px;
-		border-radius: 6px;
-		text-decoration: none !important;
-		color: $dark-mode-yellow !important;
-
-		background-size: 200% 100%;
-	    background-image: linear-gradient(to right, #3e3e3e 50%, $dark-mode-yellow 50%);
-	    @include transitionAll(0.3s);
-
-		&--disabled {
-			background-color: #d1d1d1;
-
-			&:hover {
-				background-color: #d1d1d1 !important;
-				cursor: default !important;
-			}
-
-			.buttonContainer_button_text {
-				color: #656565 !important;
-			}
-
-			.buttonContainer_button_icon {
-				color: #656565 !important;
-			}
-
-		}
-
-		&_icon {
-			display: block;
-			margin: auto;
-			color: #fff;
-			font-size: 21px !important;
-			height: 19px;
-			text-align: center;
-		}
-
-		&--spin {
-
-			&:hover {
-				background-color: #FF4A1C !important;
-				cursor: default !important;
-			}
-
-		}
-
-		&_text {
-			@include flex;
-			align-items: center;
-			color: $dark-mode-yellow !important;
-			text-decoration: none !important;
-			font-size: 1.4em;
-			@include transition(color, 0.2s);
-
-			&_icon {
-				font-size: 1em;
-				margin-left: 9px;
-				margin-top: 5px;
-			}
-
-		}
-
-		&:hover {
-			cursor: pointer;
-			background-position: -100% 0;
-		}
-
-		&:hover .buttonContainer_button_text {
-			color: #282828 !important;
-			text-decoration: none !important;
-		}
-
-	}
-
+main {
+	margin-top: $nav-height;
 }
 
-.skillSection {
-	margin: 50px auto;
-	margin-bottom: 100px;
-
-	&:last-of-type {
-		margin-bottom: 0px;
-	}
-
-	.sectionText {
-		margin-bottom: 20px;
-	}
-
-	.skillItemGrid {
-		@include grid;
-		grid-template-columns: 1fr 1fr;
-		grid-gap: 20px;
-		
-		.skillItem {
-			width: 100%;
-			@include inlineFlex;
-			border-radius: 5px;
-			background-color: #484848;
-			border-left: 8px solid #fff;
-
-			&--green {
-				border-color: $skill-item-green !important;
-
-				.skillLevel_icon {
-					background-color: $skill-item-green !important;
-				}
-
-			}
-
-			&--orange {
-				border-color: $skill-item-orange !important;
-
-				.skillLevel_icon {
-					background-color: $skill-item-orange !important;
-				}
-
-			}
-
-			&--white {
-				border-color: #fff !important;
-
-				.skillLevel_icon {
-					background-color: #fff !important;
-				}
-
-			}
-
-			&_iconContainer {
-				width: 70px;
-				background-color: #3e3e3e;
-
-				&_icon {
-					font-size: 30px;
-					color: #fff;
-				}
-
-			}
-
-			&_body {
-				width: inherit;
-				padding: 10px 12px;
-
-				&_heading {
-					margin: 0px;
-					font-size: 1.6em;
-					line-height: 1.5em;
-					font-weight: 500;
-				}
-
-				&_divider {
-					height: 1px;
-					width: 100%;
-					margin: 6px 0px 10px 0px;
-					background-color: #676767;
-				}
-
-				.skillLevel {
-					@include inlineFlex;
-					align-items: center;
-
-					&_icon {
-						height: 15px;
-						width: 15px;
-						display: inline-block;
-						border-radius: 100%;
-						margin-right: 8px;
-						background-color: #fff;
-					}
-
-					&_text {
-						font-size: 1.2em;
-						line-height: 1.5em;
-						font-weight: 300;
-
-						&_number {
-							font-weight: 400;
-							padding-left: 2px;
-						}
-
-					}
-
-				}
-
-			}
-
-		}
-
-	}
-
+section {
+	min-height: calc(100vh - #{$nav-height});
+	position: relative;
+	transition: background-color .2s ease;
 }
 
-.workContainer {
+.section-content {
+	padding: 24px 40px;
+	margin: auto;
+	// margin-bottom: 120px;
+	width: 100%;
 	max-width: 1200px;
-	// @include grid;
-	// grid-template-columns: 1fr 1fr;
-	// grid-gap: 30px;
 
-	&_menu {
-
-		.menuItem {
-			margin-bottom: 15px;
-			padding: 12px;
-			background-color: #404040;
-			border-radius: 5px;
-			// text-align: center;
-			@include transitionAll(0.4s);
-
-			&:last-of-type {
-				margin-bottom: 0px;
-			}
-
-			&:hover {
-				cursor: pointer;
-				padding-left: 18px;
-				color: $dark-mode-yellow;
-			}
-
-			&--active {
-				border-left: 8px solid $dark-mode-yellow;
-
-				&:hover {
-					cursor: default;
-					padding-left: 12px;
-				}
-
-				.menuItem_text {
-					color: $dark-mode-yellow;
-					font-weight: 600;
-				}
-
-			}
-
-			&_text {
-				font-size: 1.4em;
-				line-height: 1.5em;
-			}
-
-		}
-
+	&.about {
+		padding: 6% 40px 24px 40px;
 	}
 
-	.workItem {
-		width: 100%;
-		display: block;
-		margin-bottom: 70px;
-		background-color: #404040;
-		border-radius: 5px;
-		text-decoration: none !important;
+	&.work, &.skills, &.experience {
+		max-width: 1440px;
+	}
 
-		&:last-of-type {
-			margin-bottom: 0px;
-		}
+	&.experience {
+		max-width: 880px;
+	}
 
-		&:hover {
-			cursor: pointer;
-
-			// .workItem_imageContainer {
-
-			// 	&_image {
-			// 		transform: scale(1.03);
-			// 	}
-
-			// }
-
-			// .workItem_content_h2 {
-			// 	padding-left: 5px;
-			// }
-
-			.workItem_hoverBox {
-				background-position: -100% 0;
-
-				&_text {
-					color: #282828;
-				}
-
-			}
-
-		}
-
-		&--noClick {
-			pointer-events: none !important;
-		}
-
-		&--active {
-
-			.workItem_imageContainer_image {
-				transform: scale(1.03);
-			}
-
-		}
-
-		&_imageContainer {
-			overflow: hidden !important;
-			border-radius: 5px 5px 0px 0px;
-
-			&_image {
-				width: 100%;
-				max-width: 100%;
-				display: block;
-				margin: auto;
-				border-radius: 5px 0px 0px 0px;
-				@include transition(transform, 0.4s);
-			}
-
-			#client-logos-mobile {
-				display: none;
-			}
-
-		}
-
-		&_content {
-			width: 100%;
-			margin: auto;
-			padding: 15px 20px;
-			padding-bottom: 10px;
-
-			&_h2 {
-				display: block;
-				margin: 4px 0px 16px 0px;
-				font-size: 2em;
-				line-height: 1.2em;
-				text-decoration: underline;
-				@include transition(padding-left, 0.3s);
-			}
-
-			&_p {
-				margin: 0px;
-				margin-bottom: 15px;
-				color: #e9e9e9;
-				font-size: 1.4em;
-				line-height: 1.4em;
-				font-weight: 300;
-			}
-
-			&_tags {
-				@include inlineFlex;
-				flex-wrap: wrap;
-				// margin: 15px;
-				margin-top: 10px;
-
-				.tag {
-					width: fit-content;
-					margin-right: 10px;
-					margin-bottom: 12px;
-					padding: 8px 14px;
-					// border: 1px solid $dark-mode-yellow;
-					background-color: #303030;
-					border-radius: 22px;
-					text-align: center;
-
-					&:last-of-type {
-						margin-right: 0px;
-						// margin-bottom: 0px;
-					}
-
-					&_text {
-						font-size: 1.3em;
-						color: $dark-mode-yellow;
-
-						&_icon {
-							margin-right: 5px;
-						}
-
-					}
-
-				}
-
-			}
-
-			// .buttonContainer {
-			// 	display: none;
-			//     border-top: 1px solid #6a6a6a;
-			//     padding-top: 20px;
-
-			// 	&_button {
-			// 		width: 100%;
-			// 		transition: background-position 0.4s;
-
-			// 		&--ghost {
-			// 			border: none;
-			// 		}
-
-			// 	}
-
-			// }
-
-		}
-
-		&_hoverBox {
-			display: block;
-			padding: 15px 20px;
-			grid-column: 1 / span 2;
-			text-align: right;
-			text-decoration: none !important;
-			border-radius: 0px 0px 5px 5px;
-			border-top: 1px solid #4e4e4e;
-			z-index: 999;
-
-			background-size: 200% 100%;
-		    background-image: linear-gradient(to right, #161616 50%, $dark-mode-yellow 50%);
-		    @include transition(background-position, 0.3s);
-
-		    // &:hover {
-			// 	cursor: pointer;
-			// 	background-position: -100% 0;
-
-			// 	.workItem_hoverBox_text {
-			// 		color: #282828;
-			// 	}
-
-			// }
-
-		    &_text {
-		    	color: $dark-mode-yellow;
-		    	font-size: 1.4em;
-		    	@include transition(color, 0.3s);
-
-		    	&_icon {
-		    		margin-left: 5px;
-		    	}
-
-		    }
-
-		}
-
+	&.skills {
+		padding-top: 260px;
+		padding-bottom: 320px;
 	}
 
 }
 
-.footer {
-	background-color: #212121;
-	padding: 40px 20px;
+.svg-background {
+	position: absolute;
+  display: block;
+  overflow: hidden;
+  z-index: -1;
+  left: 0px;
+
+  &--about {
+  	bottom: 0px;
+  }
+
+  &--work {
+    top: 0px;
+  }
+
+  &--skills {
+    top: 0px;
+
+    &-bottom {
+    	bottom: 0px;
+    }
+
+  }
+
+  &--experience {
+    top: 0px;
+    position: relative;
+  }
+
+  &--footer {
+  	// top: 0px;
+  }
+
+}
+
+.section-heading {
+	@include flex;
+	align-items: center;
+	margin-bottom: 32px;
+
+	span {
+		font-size: 2.5em;
+		font-weight: 300;
+		color: $primary-light;
+	}
+
+	h1 {
+		font-family: $heading-font;
+		font-size: 3.2em;
+		color: $headings-light;
+		padding-left: 6px;
+	}
+
+}
+
+.button {
+	text-decoration: none;
 	display: block;
-	text-align: center;
+	width: fit-content;
+	cursor: pointer;
+	background: $primary-light;
+	background-size: 200% 100%;
+	background-image: linear-gradient(to right, #2C3FA0, #4258CB);
+	border: 0px;
+	// border-color: $primary-light;
+	border-radius: $border-radius-buttons;
+	color: $white;
+	padding: 8px 16px;
+	transition: color .2s ease,
+							background-position .2s ease;
 
-	&_icons {
-		@include inlineFlex;
-		align-items: center;
-		justify-content: center;
+	&--primary {
+		font-size: 1.1em;
+		font-weight: 400;
+		padding: 8px 20px;
+	}
 
-		.iconContainer {
-			width: 50px;
-			height: 50px;
-			border-radius: 100%;
-			background-color: #353535;
-			margin-right: 15px;
-			text-decoration: none !important;
-			@include transition(background-color, 0.3s);
+	&:hover {
+		background-position: -100% 0;
+	}
 
-			&:last-of-type {
-				margin-right: 0px;
-			}
+	i {
+		font-size: 1.2em;
+		margin-left: 4px;
+	}
 
-			&:hover {
-				cursor: pointer;
-				background-color: #3a3a3a;
-			}
+}
 
-			&_icon {
-				font-size: 24px;
-				margin-top: 2px;
-				color: #fff;
-			}
+////////////////////////////////////
+////////////---Dark---//////////////
+////////////////////////////////////
 
+body.dark {
+	background-color: $background-dark;
+	color: $text-dark;
+
+	.color-primary {
+		color: $primary-dark;
+	}
+
+	.color-complementary {
+		color: $complementary-dark;
+	}
+
+	.text-link {
+		color: $primary-dark;
+	}
+
+	.button--primary {
+		background-color: $primary-dark;
+		background-image: linear-gradient(to right, #62BFED, #A4D9F4);
+		border-color: $primary-dark;
+		color: $headings-light;
+		font-weight: 500;
+	}
+
+	.svg-background {
+
+		path {
+			fill: $white;
+			fill-opacity: .08;
 		}
 
 	}
 
-	&_text {
-		display: block;
-		margin: auto;
-		margin-top: 30px;
-		font-size: 1.4em;
-		color: #fff;
+	.section-heading {
 
-		&_icon {
-			margin-right: 5px;
+		span {
+			color: $primary-dark;
+		}
+
+		h1 {
+			color: $headings-dark;
 		}
 
 	}
@@ -1220,223 +258,33 @@ nav {
 ////////////---Media Queries---//////////////
 /////////////////////////////////////////////
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 820px) {
+	// iPad air screen width
+}
 
-	.workContainer {
+@media only screen and (max-width: 760px) { // Break point for nav change
 
-		.workItem {
-			display: block;
-
-			&_imageContainer {
-
-				&_image {
-					border-radius: 5px 5px 0px 0px;
-				}
-
-			}
-
-		}
-
+	html {
+		scroll-padding-top: $nav-height-mobile;
 	}
 
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 650px) { // Break point for mobile
 
-	.skillSection {
-
-		.skillItemGrid {
-			grid-template-columns: 1fr;
-		}
-
+	.section-content {
+		padding-left: 24px !important;
+		padding-right: 24px !important;
 	}
 
-}
+	.section-heading {
 
-@media only screen and (max-width: 700px) {
-
-	.pageContent {
-		padding: 0px;
-		padding-top: 110px;
-	}
-
-	.sectionContainer {
-
-		.section {
-			width: 90%;
-			margin: 30px auto;
+		span {
+			font-size: 2em;
 		}
 
-	}
-
-	nav {
-		width: 100%;
-		height: 110px;
-
-		.navContainer {
-
-			.navItem {
-				margin: 0px;
-				margin-right: 20px;
-
-				&:hover {
-					width: 80px;
-
-					.navItem_iconContainer_icon {
-						color: inherit;
-					}
-
-					.navItem_text {
-						color: inherit;
-					}
-
-				}
-
-			}
-
-			.switchContainer {
-				margin-left: 0px;
-			}
-
-		}
-
-	}
-
-	.infoCard {
-		width: 100%;
-		display: block;
-
-		&_imageContainer {
-			// margin: auto;
-			margin-right: 0px;
-			margin-bottom: 30px;
-
-			&_image {
-				max-width: 280px;
-				margin: 0px;
-			}
-
-		}
-
-		&_textContainer {
-			// width: fit-content;
-			margin: 0px;
-			margin-top: 10px;
-			// padding: 12px 15px;
-			// text-align: center;
-		}
-
-	}
-
-}
-
-@media only screen and (max-width: 600px) {
-
-	.sectionContainer {
-
-		.section {
-			margin: 30px auto;
-			margin-bottom: 100px;
-		}
-
-	}
-
-	.sectionHeading_h1 {
-		font-size: 3em;
-	}
-
-	.buttonContainer {
-
-		&--inlineFlex {
-			display: block;
-
-			.buttonContainer_button {
-				margin-right: 0px;
-				margin-bottom: 20px;
-
-				&:last-of-type {
-					margin-bottom: 0px;
-				}
-
-			}
-
-		}
-
-		.buttonContainer_button {
-			width: 100%;
-		}
-
-	}
-
-	.workContainer {
-
-		.workItem {
-
-			&_imageContainer {
-
-				#client-logos-mobile {
-					display: block;
-				}
-
-				#client-logos-desktop {
-					display: none;
-				}
-
-			}
-
-		}
-
-	}
-
-}
-
-
-@media only screen and (max-width: 500px) {
-
-	.infoCard {
-
-		&_imageContainer {
-			margin: auto;
-			margin-bottom: 30px;
-
-			&_image {
-				max-width: 160px;
-				// margin: auto;
-			}
-
-		}
-
-	}
-
-}
-
-
-@media only screen and (max-width: 400px) {
-
-	nav {
-		height: 100px;
-
-		.navContainer {
-
-			.navItem {
-				height: 70px;
-				width: 70px;
-				margin-right: 15px;
-
-				&:hover {
-					width: 70px;
-				}
-
-				&_iconContainer_icon {
-					font-size: 20px;
-				}
-
-				&_text {
-					font-size: 1em;
-				}
-
-			}
-
+		h1 {
+			font-size: 2.5em;
 		}
 
 	}

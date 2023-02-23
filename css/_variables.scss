@@ -1,0 +1,76 @@
+/////////////////////////////////////////
+////////////---Variables---//////////////
+/////////////////////////////////////////
+
+// Fonts
+$text-font: "Fira Sans", sans-serif;
+$heading-font: "Catamaran", sans-serif;
+
+// Font sizes
+$body-text: 16px;
+$nav-link-text: 18px;
+$nav-link-text-mobile: 16px;
+
+// Colors - light 
+$primary-light: #4258CB; // Navy Blue
+$secondary-light: #62BFED; // Light blue
+$complementary-light: #00B295; // Teal
+$complementary-2-light: #FB4D3D; // Orange
+$headings-light: #04080F; // Black
+$text-light: rgba($headings-light, .8); // Light black
+$white: #ffffff; // White
+$black: #000000; // White
+$background-light: #FEFDF9; // Egg shell
+$border-light: #e9e9e9; // Light grey
+
+// Colors - dark 
+$primary-dark: #62BFED; // Light Blue
+$secondary-dark: #62BFED; // Light blue
+$complementary-dark: #00B295; // Teal
+$headings-dark: #fff; // White
+$text-dark: rgba($headings-dark, .8); // Almost white
+$background-dark: $headings-light; // Light black
+
+// Navigation
+$nav-height: 88px;
+$nav-height-mobile: 72px;
+$nav-background-light: #fff;
+$nav-background-dark: $headings-light;
+
+// Buttons
+$border-radius-buttons: 6px;
+$border-radius-default: 16px;
+
+////////////////////////////////////
+///////////---Mixins---/////////////
+////////////////////////////////////
+@mixin flex {
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin inlineFlex {
+	display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+@mixin grid {
+	display: -ms-grid;
+    display: grid;
+}
+
+@mixin focusStyling {
+	outline: 2px dashed $headings-light;
+	outline-offset: 4px;
+	border-radius: 1px;
+}
+
+@mixin tileShadow {
+	box-shadow: 0px 2px 28px 0px rgba(#c5c5c5, .25);
+}
+
+@mixin transitionAll {
+	transition: all .2s ease;
+}
