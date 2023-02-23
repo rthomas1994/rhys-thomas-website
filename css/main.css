@@ -650,7 +650,7 @@ section#experience {
       display: flex;
       align-items: center;
       gap: 6px;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
       font-size: 1em; }
       .experience-container .experience-item__header__info a {
         color: #4258CB;
