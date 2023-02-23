@@ -310,13 +310,6 @@ body.dark {
 	nav.desktop-nav .nav-links {
 		display: none;
 	}
-	.theme-button {
-		height: 56px;
-		width: 56px;
-		i {
-			font-size: 20px;
-		}
-	}
 	.menu-button--open {
 		@include flex;
 	}
