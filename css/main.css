@@ -452,6 +452,7 @@ body.dark .work-container .work-item {
 @media only screen and (max-width: 650px) {
   .work-container {
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 64px;
     padding: 0px 8px; } }
 .skill-filters {
   display: -webkit-box;
