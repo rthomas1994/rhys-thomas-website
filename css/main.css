@@ -295,7 +295,7 @@ body.dark .menu-button i {
     .about .career-item:last-of-type {
       margin-bottom: 0px; }
     .about .career-item--active .career-item__dot {
-      border: 2px solid #00B295; }
+      border: 2px solid #1B9AAA; }
     .about .career-item--active .career-item__info p {
       font-weight: 600; }
     .about .career-item--image {
@@ -354,13 +354,13 @@ body.dark {
       padding-bottom: 80px !important; } }
 @media only screen and (max-width: 650px) {
   .about.section-content {
-    padding: 64px 24px 32px 24px !important; }
+    padding: 48px 24px 32px 24px !important; }
   .about__bio h3 {
     font-size: 1em; }
   .about__bio h2 {
     font-size: 3em; }
   .about__bio p {
-    font-size: 1em; }
+    font-size: 1.1em; }
   .about__bio .button {
     font-size: 1em; } }
 section#work {
@@ -432,7 +432,7 @@ section#work {
         font-size: 0.8em;
         font-weight: 400; }
         .work-container .work-item__tags .work-tag--design {
-          background-color: rgba(0, 178, 149, 0.15); }
+          background-color: rgba(27, 154, 170, 0.15); }
         .work-container .work-item__tags .work-tag--dev {
           background-color: rgba(251, 77, 61, 0.08); }
   .work-container a.work-item {
@@ -753,7 +753,7 @@ body {
   color: #FB4D3D; }
 
 .color-complementary {
-  color: #00B295; }
+  color: #1B9AAA; }
 
 .text-link {
   text-decoration: underline;
