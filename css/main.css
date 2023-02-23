@@ -233,8 +233,7 @@ body.dark .menu-button i {
   .about .career-path {
     background-color: #ffffff;
     border-radius: 16px;
-    border: 1px solid rgba(4, 8, 15, 0.4);
-    padding: 24px 0px 0px 0px; }
+    border: 1px solid rgba(4, 8, 15, 0.4); }
     .about .career-path__image {
       width: 120px;
       height: 120px;
