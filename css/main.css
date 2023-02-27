@@ -392,6 +392,8 @@ section#work {
         background: linear-gradient(45deg, #f0607a 0%, #e83151 100%); }
       .work-container .work-item__image--teal {
         background: linear-gradient(45deg, #85ffc7 0%, #49dcb1 100%); }
+      .work-container .work-item__image--dark-teal {
+        background: linear-gradient(45deg, #24a9c5 0%, #077187 100%); }
       .work-container .work-item__image--green {
         background: linear-gradient(45deg, #97d05f 0%, #669d31 100%); }
       .work-container .work-item__image--yellow {
