@@ -97,13 +97,13 @@
 
 		&:after {
 			content: '';
-	    width: 1px;
-	    border-left: 1px dashed #d1d1d1;
-	    height: calc(100% - 190px);
-	    position: absolute;
-	    left: 36px;
-	    top: 40px;
-	    z-index: 1;
+		    width: 1px;
+		    border-left: 1px dashed #d1d1d1;
+		    height: calc(100% - 195px);
+		    position: absolute;
+		    left: 36px;
+		    top: 50px;
+		    z-index: 1;
 		}
 
 	}
