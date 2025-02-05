@@ -77,7 +77,7 @@ $(document).ready(function() {
 			skill: 'Figma',
 			icon: 'media/figma-logo.png',
 			alt: 'Figma icon',
-			level: '5+ years experience',
+			level: '7+ years experience',
 			type: 'design'
 		},
 		{
@@ -88,16 +88,16 @@ $(document).ready(function() {
 			type: 'design'
 		},
 		{
-			skill: 'Adobe CC',
-			icon: 'media/adobe-cc-logo.png',
-			alt: 'Adobe CC icon',
-			level: '2-3 years experience',
-			type: 'design'
-		},
-		{
 			skill: 'Web Accessibility',
 			icon: 'media/accessibility-logo.png',
 			alt: 'Web accessibility icon',
+			level: '5+ years experience',
+			type: 'design'
+		},
+		{
+			skill: 'Adobe CC',
+			icon: 'media/adobe-cc-logo.png',
+			alt: 'Adobe CC icon',
 			level: '2-3 years experience',
 			type: 'design'
 		},
@@ -147,7 +147,7 @@ $(document).ready(function() {
 			skill: 'GitHub',
 			icon: 'media/github-logo.png',
 			alt: 'GitHub icon',
-			level: '2-3 years experience',
+			level: '5+ years experience',
 			type: 'development'
 		},
 		{
@@ -261,6 +261,13 @@ $(document).ready(function() {
 		</div>
 	`;
 
+	var uxrTag = `
+		<div class="work-tag work-tag--design">
+			<i class="bi bi-people"></i>
+			<span>User Research</span>
+		</div>
+	`;
+
 	const tagList = [
 		{
 			uidesign: uiTag,
@@ -271,7 +278,8 @@ $(document).ready(function() {
 			desktop: desktopTag,
 			mobile: mobileTag,
 			responsive: responsiveTag,
-			nocode: nocodeTag
+			nocode: nocodeTag,
+			uxr: uxrTag
 		}
 	];
 

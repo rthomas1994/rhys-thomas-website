@@ -121,6 +121,8 @@
 		span {
 			font-size: 1.1em;
 			@include transitionAll;
+			/* Added on 2/5/25 */
+			display: none;
 		}
 
 	}
