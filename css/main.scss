@@ -121,6 +121,11 @@ section {
   overflow: hidden;
   z-index: -1;
   left: 0px;
+  transition: fill .4s ease, background-color .4s ease;
+
+  path {
+  	transition: fill .4s ease, background-color .4s ease;
+  }
 
   &--about {
   	bottom: 0px;

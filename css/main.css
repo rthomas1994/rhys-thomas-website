@@ -816,7 +816,10 @@ section {
   display: block;
   overflow: hidden;
   z-index: -1;
-  left: 0px; }
+  left: 0px;
+  transition: fill .4s ease, background-color .4s ease; }
+  .svg-background path {
+    transition: fill .4s ease, background-color .4s ease; }
   .svg-background--about {
     bottom: 0px; }
   .svg-background--work {
