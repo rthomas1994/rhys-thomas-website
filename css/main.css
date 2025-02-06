@@ -320,6 +320,8 @@ body.dark .menu-button i {
       font-weight: 400;
       color: #04080F;
       font-size: 1.1em; }
+      .about .career-item__info p a {
+        color: #04080F; }
 
 body.dark {
   background-color: #04080F;
