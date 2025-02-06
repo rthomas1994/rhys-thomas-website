@@ -29,7 +29,7 @@ body {
 	font-size: 16px;
 	color: $text-light;
 	font-weight: 300;
-	transition: background-color .2s ease, color .2s ease;
+	transition: background-color .4s ease, color .4s ease;
 }
 
 .italic-text {
@@ -64,7 +64,7 @@ body {
 
 .h1, .h2, .h3, .h4, .h5 {
 	font-family: $heading-font;
-	transition: color .2s ease;
+	transition: color .4s ease;
 }
 
 a, button, label {
@@ -86,7 +86,7 @@ main {
 section {
 	min-height: calc(100vh - #{$nav-height});
 	position: relative;
-	transition: background-color .2s ease;
+	transition: background-color .4s ease;
 }
 
 .section-content {
@@ -183,9 +183,9 @@ section {
 	background-color: $white;
 	border: 1px solid $primary-light;
 	color: $primary-light;
-	transition: color .2s ease,
-							background-position .2s ease,
-							background-color .2s ease;
+	transition: color .4s ease,
+							background-position .4s ease,
+							background-color .4s ease;
 
 	&--primary {
 		padding: 8px 20px;

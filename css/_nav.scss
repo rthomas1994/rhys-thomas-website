@@ -29,7 +29,7 @@ nav.desktop-nav {
 	background-color: $background-light;
 	padding: 16px 32px;
 	// border-bottom: 1px solid rgba($headings-light, .05);
-	transition: background-color .2s ease, color .2s ease, box-shadow .2s ease;
+	transition: background-color .4s ease, color .4s ease, box-shadow .4s ease;
 	// box-shadow: 2px 4px 12px rgba(#fca311, .03);
 
 	&.shadow {
@@ -43,7 +43,6 @@ nav.desktop-nav {
 	align-items: center;
 	font-family: $heading-font;
 	gap: 16px;
-	@include transitionAll;
 
 	&__image {
 		height: 48px;
@@ -55,11 +54,6 @@ nav.desktop-nav {
 		font-family: $heading-font;
 		font-weight: 700;
 		font-size: 1.4em;
-
-		span {
-			// font-weight: 500;
-		}
-
 	}
 
 }
@@ -68,7 +62,6 @@ nav.desktop-nav {
 	@include flex;
 	align-items: center;
 	gap: 40px;
-	@include transitionAll;
 }
 
 .nav-links {
@@ -88,13 +81,13 @@ nav.desktop-nav {
 		color: $primary-light;
 		font-weight: 300;
 		text-decoration: none;
-		transition: color .2s ease;
+		transition: color .4s ease;
 	}
 
 	&__link {
 		color: $text-light;
 		font-weight: 500;
-		transition: color .2s ease;
+		transition: color .4s ease;
 		text-decoration: none;
 		position: relative;
 
@@ -108,7 +101,7 @@ nav.desktop-nav {
 			margin-top: 10px;
 			opacity: 0;
 			background-color: $headings-light;
-			transition: opacity 0.2s ease, width .2s ease;
+			transition: opacity .4s ease, width .4s ease;
 		}
 
 		&:hover::after,
@@ -132,7 +125,7 @@ nav.desktop-nav {
 	background-color: rgba($primary-light, .08);
 	color: $primary-light;
 	cursor: pointer;
-	transition: background-color .2s ease;
+	transition: background-color .4s ease;
 
 	&:hover {
 		background-color: rgba($primary-light, .15);

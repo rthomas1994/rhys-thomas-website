@@ -15,6 +15,7 @@ section#experience {
 	border: 1px solid rgba($headings-light, .1);
 	padding: 12px 16px;
 	margin-bottom: 24px;
+	transition: background-color .4s ease;
 
 	.link-container {
 		@include flex;

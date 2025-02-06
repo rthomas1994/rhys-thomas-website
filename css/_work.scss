@@ -14,7 +14,7 @@ section#work {
 	.work-item {
 		border-radius: $border-radius-default;
 		background-color: $white;
-		transition: transform .4s ease, box-shadow .4s ease;
+		transition: transform .4s ease, box-shadow .4s ease, background-color .4s ease;
 		filter: blur(0);
 	  -webkit-filter: blur(0);
 		text-decoration: none;
@@ -24,6 +24,7 @@ section#work {
 		&__image {
 			border-radius: 16px 16px 0px 0px;
 			padding: 24px;
+			// @include transitionAll;
 
 			&--white {
 				background: #fcfcfc;
@@ -99,6 +100,7 @@ section#work {
 				color: $headings-light;
 				font-size: 0.8em;
 				font-weight: 400;
+				transition: background-color .4s ease;
 
 				&--design {
 					background-color: rgba($complementary-light, .15);

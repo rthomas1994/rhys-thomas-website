@@ -105,6 +105,7 @@
 			width: 48px;
 			height: 48px;
 			object-fit: scale-down;
+			transition: filter .4s ease;
 		}
 
 	}
@@ -167,6 +168,11 @@ body.dark {
 		&__icon {
 			background-color: rgba($white, .15);
 			box-shadow: none;
+
+			img.invert {
+				filter: invert(1);
+			}
+
 		}
 
 		&__info {

@@ -92,7 +92,8 @@ $(document).ready(function() {
 			icon: 'media/accessibility-logo.png',
 			alt: 'Web accessibility icon',
 			level: '5+ years experience',
-			type: 'design'
+			type: 'design',
+			invert: 'invert'
 		},
 		{
 			skill: 'Adobe CC',
@@ -148,7 +149,8 @@ $(document).ready(function() {
 			icon: 'media/github-logo.png',
 			alt: 'GitHub icon',
 			level: '5+ years experience',
-			type: 'development'
+			type: 'development',
+			invert: 'invert'
 		},
 		{
 			skill: 'Bootstrap',
@@ -172,7 +174,7 @@ $(document).ready(function() {
 	$(skillData).each(function(k, v) {
 		var element = `<div class="skill" data-skill-type="${v.type}">
 											<div class="skill__icon">
-												<img src="${v.icon}" class="" alt="${v.alt}" />
+												<img src="${v.icon}" class="${v.invert}" alt="${v.alt}" />
 											</div>
 											<div class="skill__info">
 												<p>${v.skill}</p>

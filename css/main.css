@@ -22,7 +22,7 @@ nav.desktop-nav {
   z-index: 9999;
   background-color: #FEFDF9;
   padding: 16px 32px;
-  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease; }
+  transition: background-color .4s ease, color .4s ease, box-shadow .4s ease; }
   nav.desktop-nav.shadow {
     box-shadow: 2px 4px 12px rgba(4, 8, 15, 0.03); }
 
@@ -32,8 +32,7 @@ nav.desktop-nav {
   display: flex;
   align-items: center;
   font-family: "Catamaran", sans-serif;
-  gap: 16px;
-  transition: all .2s ease; }
+  gap: 16px; }
   .nav-bio__image {
     height: 48px;
     width: 48px;
@@ -48,8 +47,7 @@ nav.desktop-nav {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  gap: 40px;
-  transition: all .2s ease; }
+  gap: 40px; }
 
 .nav-links {
   display: -webkit-box;
@@ -68,11 +66,11 @@ nav.desktop-nav {
     color: #4258CB;
     font-weight: 300;
     text-decoration: none;
-    transition: color .2s ease; }
+    transition: color .4s ease; }
   .nav-link__link {
     color: rgba(4, 8, 15, 0.8);
     font-weight: 500;
-    transition: color .2s ease;
+    transition: color .4s ease;
     text-decoration: none;
     position: relative; }
     .nav-link__link::after {
@@ -85,7 +83,7 @@ nav.desktop-nav {
       margin-top: 10px;
       opacity: 0;
       background-color: #04080F;
-      transition: opacity 0.2s ease, width .2s ease; }
+      transition: opacity .4s ease, width .4s ease; }
     .nav-link__link:hover::after, .nav-link__link:focus::after {
       width: 100%;
       opacity: 1; }
@@ -103,7 +101,7 @@ nav.desktop-nav {
   background-color: rgba(66, 88, 203, 0.08);
   color: #4258CB;
   cursor: pointer;
-  transition: background-color .2s ease; }
+  transition: background-color .4s ease; }
   .theme-button:hover {
     background-color: rgba(66, 88, 203, 0.15); }
   .theme-button:focus-visible {
@@ -147,7 +145,11 @@ nav.desktop-nav {
   width: 280px;
   min-height: 620px;
   box-shadow: -10px 4px 28px 0px rgba(4, 8, 15, 0.08);
-  transition: all .2s ease;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease-out;
+  -moz-transition: all .4s ease-out;
+  -o-transition: all .4s ease-out;
+  transition: all .4s ease-out;
   padding: 0px 24px; }
   .mobile-nav--visible {
     right: 0px; }
@@ -374,7 +376,7 @@ section#work {
   .work-container .work-item {
     border-radius: 16px;
     background-color: #ffffff;
-    transition: transform .4s ease, box-shadow .4s ease;
+    transition: transform .4s ease, box-shadow .4s ease, background-color .4s ease;
     filter: blur(0);
     -webkit-filter: blur(0);
     text-decoration: none;
@@ -432,7 +434,8 @@ section#work {
         border-radius: 6px;
         color: #04080F;
         font-size: 0.8em;
-        font-weight: 400; }
+        font-weight: 400;
+        transition: background-color .4s ease; }
         .work-container .work-item__tags .work-tag--design {
           background-color: rgba(27, 154, 170, 0.15); }
         .work-container .work-item__tags .work-tag--dev {
@@ -558,15 +561,24 @@ body.dark .work-container .work-item {
     .skill__icon img {
       width: 48px;
       height: 48px;
-      object-fit: scale-down; }
+      object-fit: scale-down;
+      transition: filter .4s ease; }
   .skill__info p {
     font-weight: 600;
     font-size: 1.4em;
     color: #04080F;
-    transition: all .2s ease; }
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out; }
   .skill__info span {
     font-size: 1.1em;
-    transition: all .2s ease;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition: all .4s ease-out;
+    -o-transition: all .4s ease-out;
+    transition: all .4s ease-out;
     /* Added on 2/5/25 */
     display: none; }
 
@@ -586,6 +598,8 @@ body.dark .skill-filters .filter-item {
 body.dark .skill__icon {
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: none; }
+  body.dark .skill__icon img.invert {
+    filter: invert(1); }
 body.dark .skill__info p {
   color: #ffffff; }
 body.dark .skill__info span {
@@ -622,7 +636,8 @@ section#experience {
   border-radius: 14px;
   border: 1px solid rgba(4, 8, 15, 0.1);
   padding: 12px 16px;
-  margin-bottom: 24px; }
+  margin-bottom: 24px;
+  transition: background-color .4s ease; }
   .experience-links .link-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -739,7 +754,7 @@ body {
   font-size: 16px;
   color: rgba(4, 8, 15, 0.8);
   font-weight: 300;
-  transition: background-color .2s ease, color .2s ease; }
+  transition: background-color .4s ease, color .4s ease; }
 
 .italic-text {
   font-style: italic; }
@@ -766,7 +781,7 @@ body {
 
 .h1, .h2, .h3, .h4, .h5 {
   font-family: "Catamaran", sans-serif;
-  transition: color .2s ease; }
+  transition: color .4s ease; }
 
 a:focus-visible, button:focus-visible, label:focus-visible {
   outline: 2px dashed #04080F;
@@ -779,7 +794,7 @@ main {
 section {
   min-height: calc(100vh - 88px);
   position: relative;
-  transition: background-color .2s ease; }
+  transition: background-color .4s ease; }
 
 .section-content {
   padding: 24px 40px;
@@ -843,7 +858,7 @@ section {
   background-color: #ffffff;
   border: 1px solid #4258CB;
   color: #4258CB;
-  transition: color .2s ease, background-position .2s ease, background-color .2s ease; }
+  transition: color .4s ease, background-position .4s ease, background-color .4s ease; }
   .button--primary {
     padding: 8px 20px;
     background: #4258CB;
