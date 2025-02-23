@@ -27,7 +27,7 @@ nav.desktop-nav {
 	z-index: 9999;
 	background-color: $background-light;
 	margin: auto;
-	transition: background-color .3s ease, color .3s ease, box-shadow .3s ease, height .3s ease;
+	transition: background-color .4s ease, color .4s ease, box-shadow .4s ease, height .4s ease;
 
 	.inner {
 		@include flex;
@@ -94,7 +94,7 @@ nav.desktop-nav {
 		height: 64px;
 		width: 64px;
 		border-radius: 100%;
-		transition: height .3s ease, width .3s ease, opacity .3s ease;
+		transition: height .4s ease, width .4s ease, opacity .4s ease;
 		opacity: 1;
 		position: absolute;
 
@@ -126,19 +126,19 @@ nav.desktop-nav {
 	font-family: $heading-font;
 	font-size: $nav-link-text;
 	white-space: nowrap;
-	transition: font-size .3s ease;
+	transition: font-size .4s ease;
 
 	&__number {
 		color: $primary-light;
 		font-weight: 300;
 		text-decoration: none;
-		transition: color .3s ease;
+		transition: color .4s ease;
 	}
 
 	&__link {
 		color: $text-light;
 		font-weight: 500;
-		transition: color .3s ease;
+		transition: color .4s ease;
 		text-decoration: none;
 		position: relative;
 
@@ -152,7 +152,7 @@ nav.desktop-nav {
 			margin-top: 10px;
 			opacity: 0;
 			background-color: $headings-light;
-			transition: opacity .3s ease, width .3s ease;
+			transition: opacity .4s ease, width .4s ease;
 		}
 
 		&:hover::after,
@@ -178,7 +178,7 @@ nav.desktop-nav {
 	background-size: 60px;
 	color: $white;
 	cursor: pointer;
-	transition: background-color .3s ease, height .3s ease, weidth .3s ease, background-position .4s ease;
+	transition: background-color .4s ease, height .4s ease, weidth .4s ease, background-position .4s ease;
 
 	&:hover {
 		background-color: rgba($primary-light, .15);
@@ -224,7 +224,7 @@ nav.desktop-nav {
 	i {
 		font-size: 44px;
 		color: $headings-light;
-		transition: font-size .3s ease;
+		transition: font-size .4s ease;
 	}
 
 	&--open {
@@ -420,6 +420,10 @@ body.dark {
 		.inner {
 			padding-left: $hz-padding-mobile !important;
 			padding-right: $hz-padding-mobile !important;
+		}
+
+		.theme-button {
+			display: none;
 		}
 
 	}

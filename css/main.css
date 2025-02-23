@@ -21,7 +21,7 @@ nav.desktop-nav {
   z-index: 9999;
   background-color: #FDFDFE;
   margin: auto;
-  transition: background-color .3s ease, color .3s ease, box-shadow .3s ease, height .3s ease; }
+  transition: background-color .4s ease, color .4s ease, box-shadow .4s ease, height .4s ease; }
   nav.desktop-nav .inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -65,7 +65,7 @@ nav.desktop-nav {
     height: 64px;
     width: 64px;
     border-radius: 100%;
-    transition: height .3s ease, width .3s ease, opacity .3s ease;
+    transition: height .4s ease, width .4s ease, opacity .4s ease;
     opacity: 1;
     position: absolute; }
     .nav-bio__image--dark {
@@ -93,16 +93,16 @@ nav.desktop-nav {
   font-family: "Heebo", sans-serif;
   font-size: 20px;
   white-space: nowrap;
-  transition: font-size .3s ease; }
+  transition: font-size .4s ease; }
   .nav-link__number {
     color: #4258CB;
     font-weight: 300;
     text-decoration: none;
-    transition: color .3s ease; }
+    transition: color .4s ease; }
   .nav-link__link {
     color: #04080F;
     font-weight: 500;
-    transition: color .3s ease;
+    transition: color .4s ease;
     text-decoration: none;
     position: relative; }
     .nav-link__link::after {
@@ -115,7 +115,7 @@ nav.desktop-nav {
       margin-top: 10px;
       opacity: 0;
       background-color: #04080F;
-      transition: opacity .3s ease, width .3s ease; }
+      transition: opacity .4s ease, width .4s ease; }
     .nav-link__link:hover::after, .nav-link__link:focus::after {
       width: 100%;
       opacity: 1; }
@@ -134,7 +134,7 @@ nav.desktop-nav {
   background-size: 60px;
   color: #ffffff;
   cursor: pointer;
-  transition: background-color .3s ease, height .3s ease, weidth .3s ease, background-position .4s ease; }
+  transition: background-color .4s ease, height .4s ease, weidth .4s ease, background-position .4s ease; }
   .theme-button:hover {
     background-color: rgba(66, 88, 203, 0.15);
     background-position-y: -4px; }
@@ -163,7 +163,7 @@ nav.desktop-nav {
   .menu-button i {
     font-size: 44px;
     color: #04080F;
-    transition: font-size .3s ease; }
+    transition: font-size .4s ease; }
   .menu-button--open {
     display: none; }
   .menu-button--close {
@@ -275,7 +275,9 @@ body.dark .nav-bio__image--light {
 @media only screen and (max-width: 650px) {
   nav.desktop-nav .inner {
     padding-left: 24px !important;
-    padding-right: 24px !important; } }
+    padding-right: 24px !important; }
+  nav.desktop-nav .theme-button {
+    display: none; } }
 .about {
   align-items: center; }
   .about h1 {
@@ -459,7 +461,8 @@ section#experience {
 
 .experience-outer {
   border: 1px solid rgba(4, 8, 15, 0.1);
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  transition: background-color .4s ease; }
 
 .centered-links {
   display: -webkit-box;
@@ -479,8 +482,7 @@ section#experience {
   width: 100%;
   max-width: 880px;
   padding: 0px 40px;
-  gap: 56px;
-  transition: background-color .4s ease; }
+  gap: 56px; }
   .experience-links .link-container {
     display: -webkit-box;
     display: -ms-flexbox;

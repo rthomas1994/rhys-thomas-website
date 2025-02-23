@@ -21,6 +21,7 @@ section#experience {
 .experience-outer {
 	border: 1px solid $border-light;
 	background-color: $white;
+	transition: background-color .4s ease;
 }
 
 .centered-links {
@@ -39,7 +40,6 @@ section#experience {
 	max-width: 880px;
 	padding: 0px $hz-padding-desktop;
 	gap: 56px;
-	transition: background-color .4s ease;
 
 	.link-container {
 		@include flex;
