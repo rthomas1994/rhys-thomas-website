@@ -75,6 +75,10 @@ body {
 	transition: color .4s ease;
 }
 
+.scroll-lock {
+	overflow: hidden !important;
+}
+
 a {
 	transition: color .2s ease;
 }

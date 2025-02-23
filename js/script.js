@@ -41,11 +41,13 @@ $(document).ready(function() {
 	// Show & hide mobile menu
 	$(".menu-button--open").click(function() {
 		$(".mobile-nav").addClass("mobile-nav--visible");
+		$("body").addClass("scroll-lock");
 	});
 
 	// Close mobile menu on click of x button
 	$(".menu-button--close, .mobile-nav__links .nav-link > a").click(function() {
 		$(".mobile-nav").removeClass("mobile-nav--visible");
+		$("body").removeClass("scroll-lock");
 	});
 
 	// Shrink nav on scroll
