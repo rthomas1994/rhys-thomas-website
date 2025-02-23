@@ -363,7 +363,8 @@ body.dark {
       .work-container .work-item__info__description:first-of-type {
         margin-bottom: 12px; }
     .work-container .work-item__info ul {
-      margin-top: 12px; }
+      margin-top: 12px;
+      padding-left: 24px; }
       .work-container .work-item__info ul li::marker {
         font-size: 12px;
         margin-bottom: 1px; }
