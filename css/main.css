@@ -744,8 +744,10 @@ body.dark {
     padding-left: 24px !important;
     padding-right: 24px !important; }
     .section-content.about {
-      padding-top: 56px;
-      padding-bottom: 140px; }
+      padding-top: 48px;
+      padding-bottom: 120px; }
+    .section-content.work {
+      padding-bottom: 100px; }
 
   .bg-lines {
     padding-left: 24px !important;
