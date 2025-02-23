@@ -471,8 +471,7 @@ section#experience {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid rgba(4, 8, 15, 0.1);
-  padding: 24px 0px;
-  margin-bottom: 16px; }
+  padding: 24px 0px; }
 
 .experience-links {
   display: -webkit-box;
