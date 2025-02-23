@@ -32,21 +32,23 @@
 	<link rel="canonical" href="https://rthomas.co"/>
 
 	<!-- Icon Libraries -->
-	<script src="https://kit.fontawesome.com/909fbc3e86.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 
 	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 	<!-- Styles -->
 	<link rel="stylesheet" href="css/reset.css?v=1">
-	<link rel="stylesheet" href="css/main.css?v=35">
+	<link rel="stylesheet" href="css/main.css?v=36">
 
 	<!-- Scripts -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-	<script src="js/script.js?v=4"></script>
+	<script src="js/script.js?v=5"></script>
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -63,91 +65,82 @@
 
 	<header>
 		<nav class="desktop-nav" role="navigation">
-			<div class="nav-bio">
-				<img src="media/rhys-profile-picture.png" class="nav-bio__image" alt="Headshot profile picture of Rhys Thomas" />
-				<h3 class="nav-bio__name">
-					<!-- Rhys Thomas -->
-					<!-- <span> -->
-						Product Designer
-					<!-- </span> -->
-				</h3>
-			</div>
-			<div class="nav-links-container">
-				<ul class="nav-links">
-					<li class="nav-link">
-						<span class="nav-link__number">01.</span>
-						<a href="#about" class="nav-link__link">About</a>
-					</li>
-					<li class="nav-link">
-						<span class="nav-link__number">02.</span>
-						<a href="#work" class="nav-link__link">Work</a>
-					</li>
-					<li class="nav-link">
-						<span class="nav-link__number">03.</span>
-						<a href="#skills_section" class="nav-link__link">Skills</a>
-					</li>
-					<li class="nav-link">
-						<span class="nav-link__number">04.</span>
-						<a href="#experience" class="nav-link__link">Experience</a>
-					</li>
-				</ul>
-				<button class="theme-button" id="dark_button_mobile" aria-label="Switch to dark mode">
-					<i class="bi bi-moon"></i>
-				</button>
-				<button class="theme-button theme-button--dark display-none" id="light_button_mobile" aria-label="Switch to light mode">
-					<i class="bi bi-brightness-high"></i>
-				</button>
-				<button class="menu-button menu-button--open" aria-label="Toggle navigation menu">
-					<i class="bi bi-text-right"></i>
-				</button>
+			<div class="inner">
+				<div class="nav-bio">
+					<img src="media/rhys-profile-picture.png" class="nav-bio__image nav-bio__image--light" alt="Headshot profile picture of Rhys Thomas" />
+					<img src="media/rhys-profile-picture-dark.png" class="nav-bio__image nav-bio__image--dark" alt="Headshot profile picture of Rhys Thomas wearing a head torch" />
+				</div>
+				<div class="nav-links-container">
+					<ul class="nav-links">
+						<li class="nav-link">
+							<span class="nav-link__number">01.</span>
+							<a href="#about" class="nav-link__link">About</a>
+						</li>
+						<li class="nav-link">
+							<span class="nav-link__number">02.</span>
+							<a href="#work" class="nav-link__link">Work</a>
+						</li>
+						<li class="nav-link">
+							<span class="nav-link__number">03.</span>
+							<a href="#experience" class="nav-link__link">Experience</a>
+						</li>
+					</ul>
+					<button class="theme-button" id="dark_button_mobile" aria-label="Switch to dark mode">
+						<i class="ph ph-moon-stars"></i>
+					</button>
+					<button class="theme-button theme-button--dark display-none" id="light_button_mobile" aria-label="Switch to light mode">
+						<i class="ph-fill ph-sun"></i>
+					</button>
+					<button class="menu-button menu-button--open" aria-label="Toggle navigation menu">
+						<i class="ph ph-text-align-right"></i>
+					</button>
+				</div>
 			</div>
 		</nav>
 		<aside class="mobile-nav">
 			<div class="mobile-nav__header">
-				<button class="theme-button" id="dark_button" aria-label="Switch to dark mode">
-					<i class="bi bi-moon"></i>
+				<button tabindex="-1" class="theme-button" id="dark_button" aria-label="Switch to dark mode">
+					<i class="ph ph-moon-stars"></i>
 				</button>
-				<button class="theme-button theme-button--dark display-none" id="light_button" aria-label="Switch to light mode">
-					<i class="bi bi-brightness-high"></i>
+				<button tabindex="-1" class="theme-button theme-button--dark display-none" id="light_button" aria-label="Switch to light mode">
+					<i class="ph-fill ph-sun"></i>
 				</button>
-				<button class="menu-button menu-button--close" aria-label="Toggle navigation menu">
-					<i class="bi bi-x-lg"></i>
+				<button tabindex="-1" class="menu-button menu-button--close" aria-label="Toggle navigation menu">
+					<i class="ph ph-x"></i>
 				</button>
 			</div>
 			<nav class="mobile-nav__links">
 				<ul class="nav-links">
 					<li class="nav-link">
 						<span class="nav-link__number">01.</span>
-						<a href="#about" class="nav-link__link">About</a>
+						<a tabindex="-1" href="#about" class="nav-link__link">About</a>
 					</li>
 					<li class="nav-link">
 						<span class="nav-link__number">02.</span>
-						<a href="#work" class="nav-link__link">Work</a>
+						<a tabindex="-1" href="#work" class="nav-link__link">Work</a>
 					</li>
 					<li class="nav-link">
 						<span class="nav-link__number">03.</span>
-						<a href="#skills_section" class="nav-link__link">Skills</a>
+						<a tabindex="-1" href="#skills_section" class="nav-link__link">Skills</a>
 					</li>
 					<li class="nav-link">
 						<span class="nav-link__number">04.</span>
-						<a href="#experience" class="nav-link__link">Experience</a>
+						<a tabindex="-1" href="#experience" class="nav-link__link">Experience</a>
 					</li>
 				</ul>
 			</nav>
 			<div class="experience-links">
 				<div class="link-container">
 					<img src="media/nng-uxc-badge.png" class="" alt="NN/g certification logo" />
-					<a href="media/nng-certificate.pdf" target="_blank" class="view-nng-cert">NN/g UX Certification</a>
+					<a tabindex="-1" href="media/nng-certificate.pdf" target="_blank" class="view-nng-cert">NN/g UX Certification</a>
 				</div>
-				<div class="experience-links__divider"></div>
 				<div class="link-container link-container--icon">
-					<i class="bi bi-linkedin"></i>
-					<a href="https://www.linkedin.com/in/rhys-thomas-6ba6641a1/" target="_blank" class="visit-linkedin">LinkedIn Profile</a>
+					<i class="ph-fill ph-linkedin-logo"></i>
+					<a tabindex="-1" href="https://www.linkedin.com/in/rhys-thomas-6ba6641a1/" target="_blank" class="visit-linkedin">LinkedIn Profile</a>
 				</div>
-				<div class="experience-links__divider"></div>
 				<div class="link-container link-container--icon">
-					<i class="bi bi-download"></i>
-					<a href="media/rhys-thomas-resume-2024.pdf" target="_blank" class="view-resume">View Resume</a>
+					<i class="ph ph-file-text"></i>
+					<a tabindex="-1" href="media/rhys-thomas-resume-2024.pdf" target="_blank" class="view-resume">View Resume</a>
 				</div>
 			</div>
 		</aside>
@@ -156,77 +149,11 @@
 	<main>
 
 		<section id="about">
-			<svg class="svg-background svg-background--about" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FCA311" fill-opacity="0.12" d="M0,256L60,229.3C120,203,240,149,360,133.3C480,117,600,139,720,128C840,117,960,75,1080,58.7C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
 			<div class="section-content about">
-				<div class="about__bio">
-					<h3>
-						Hello! My name is
-					</h3>
-					<h2>
-						Rhys Thomas
-					</h2>
-					<p>
-						I’m a <span class="color-complementary bold-text">product designer</span> and <span class="color-complementary-2 bold-text">front-end developer</span> with over 7 years experience creating user-focused websites and applications.
-					</p>
-					<p>
-						I’m currently a senior product designer at <a href="https://www.bubble.io" class="text-link" target="_blank">Bubble</a>, using a research first approach to craft a seamless and engaging experience for users looking to extend the functionality of Bubble with resources from our ecosystem.
-					</p>
-					<a href="#work" class="button button--primary" id="explore_work_button">
-						Explore Work
-						<i class="bi bi-arrow-down"></i>
-					</a>
-				</div>
-				<div class="career-path">
-					<!-- <img src="media/rhys-profile-picture.png" class="career-path__image" alt="Headshot profile picture of Rhys Thomas" /> -->
-					<div class="career-items">
-						<div class="career-item career-item--active">
-							<div class="career-item__dot"></div>
-							<div class="career-item__info">
-								<span>July 2023 | Bubble</span>
-								<p>Senior Product Designer</p>
-							</div>
-						</div>
-						<div class="career-item">
-							<div class="career-item__dot"></div>
-							<div class="career-item__info">
-								<span>May 2021 | Zudy</span>
-								<p>Senior Product Designer</p>
-							</div>
-						</div>
-						<!-- <div class="career-item">
-							<div class="career-item__dot"></div>
-							<div class="career-item__info">
-								<span>Jan 2021 | Calcium USA</span>
-								<p>UX Developer</p>
-							</div>
-						</div> -->
-						<div class="career-item">
-							<div class="career-item__dot"></div>
-							<div class="career-item__info">
-								<span>May 2018 | LINX LLC</span>
-								<p>UI/UX Designer & Front End Developer</p>
-							</div>
-						</div>
-						<hr class="career-path__divider">
-						<div class="career-item career-item--image">
-							<img src="media/nng-uxc-badge.png" class="career-item__image" alt="Nielsen Norman Group certification logo" />
-							<div class="career-item__info">
-								<span>Aug 2022 | NN/g</span>
-								<p>
-									<a href="media/nng-certificate.pdf" target="_blank" class="">
-										NN/g UX Certification
-									</a>
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="career-path__button">
-						<a href="media/rhys-thomas-resume-2024.pdf" class="career-path__button__a view-resume" target="_blank">
-							<i class="bi bi-download"></i>
-							<span>View Resume</span>
-						</a>
-					</div>
-				</div>
+			<!-- <div class="section-content about"> -->
+				<h1>
+					Rhys Thomas is a <span class="bold-text">product designer</span> and <span class="bold-text">front-end developer</span> with <span id="years-experience">7</span>+ years of experience crafting intuitive, user-centric websites and applications.
+				</h1>
 			</div>
 		</section>
 
@@ -234,247 +161,199 @@
 			<div class="section-content work">
 				<div class="section-heading">
 					<span>02.</span>
-					<h1>Recent Work</h1>
+					<h2>Recent Work</h2>
 				</div>
 				<div class="work-container">
 
-					<a href="https://www.bubble.io" target="_blank" class="work-item">
-						<div class="work-item__image work-item__image--blue">
-							<img src="media/project-bubble-homepage.png" alt="Mockups of the redesigned Bubble homepage hero section" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								Bubble Homepage
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="responsive"></div>
-								<div class="work-tag-outer" data-tag-name="uxr"></div>
+					<!-- <div class="aos-container" data-aos="fade-up" data-aos-duration="1000"> -->
+						<a href="https://www.bubble.io" target="_blank" class="work-item">
+							<div class="work-item__image work-item__image--purple">
+								<img class="work-item__img show-on-tablet" src="media/project-bubble-homepage-tablet.png" alt="The hero section of the Bubble website homepage" />
+								<img class="work-item__img hide-on-tablet" src="media/project-bubble-homepage.png" alt="The hero section of the Bubble website homepage" />
 							</div>
-							<p class="work-item__info__description">
-								A full refresh of Bubble's homepage, with a focus on answering early user questions, increasing conversion, and showcasing our product. We ran an A/B test initially, and rolled out to 100% of users shortly after, given the positive results.
-							</p>
-						</div>
-					</a>
+							<div class="work-item__info">
+								<div class="top">
+									<h3 class="work-item__info__heading">
+										Bubble Homepage
+									</h3>
+									<p class="work-item__info__description">
+										A full refresh of Bubble's homepage, with a focus on answering early user questions, increasing conversion, and showcasing our product. We ran an A/B test initially, and rolled out to 100% of users shortly after, given the positive results.
+									</p>
+									<p class="work-item__info__description">
+										We ran an A/B test initially, and rolled out to 100% of users shortly after, given the net positive impact on conversion rate and user feedback.
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="work-item__tags">
+										<div class="work-tag">
+											<i class="ph ph-users-three"></i>
+											<span>Lead Designer</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-calendar-blank"></i>
+											<span>Jan 2025</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-check"></i>
+											<span>Live</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					<!-- </div> -->
 
-					<a href="https://www.bubble.io/agency-account" target="_blank" class="work-item">
-						<div class="work-item__image work-item__image--dark-teal">
-							<img src="media/project-nav.png" alt="Mockups of the redesigned Bubble homepage hero section" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								Site Navigation
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="responsive"></div>
-								<div class="work-tag-outer" data-tag-name="uxr"></div>
+					<div class="aos-container" data-aos="fade-up" data-aos-duration="1000">
+						<a href="https://www.bubble.io/marketplace" target="_blank" class="work-item">
+							<div class="work-item__image work-item__image--red">
+								<img class="work-item__img show-on-tablet" src="media/project-bubble-marketplace-tablet.png" alt="Mockups of the Bubble template page, showing different templates built in the community" />
+								<img class="work-item__img hide-on-tablet" src="media/project-bubble-marketplace.png" alt="Mockups of the Bubble template page, showing different templates built in the community" />
 							</div>
-							<p class="work-item__info__description">
-								We rebuilt our website navigation, focusing on increasing discoverability and helping new users find what they're looking for more easily. Engagement with the navigation went up significantly, and traffic to key pages increased.
-							</p>
-						</div>
-					</a>
+							<div class="work-item__info">
+								<div class="top">
+									<h3 class="work-item__info__heading">
+										Marketplace Revamp
+									</h3>
+									<p class="work-item__info__description">
+										A complete revamp of Bubble's marketplace, with a goal of increasing discoverability, engagement, and quality of the most useful resources in the ecosystem. Key metrics impacted include:
+									</p>
+									<ul class="work-item__info__description">
+										<li><span class="bold-text-500">20% increase</span> in template views</li>
+										<li><span class="bold-text-500">16% increase</span> in template installs</li>
+										<li><span class="bold-text-500">26% increase</span> in revenue from templates</li>
+									</ul>
+								</div>
+								<div class="bottom">
+									<div class="work-item__tags">
+										<div class="work-tag">
+											<i class="ph ph-user"></i>
+											<span>Solo Designer</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-calendar-blank"></i>
+											<span>March 2024</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-check"></i>
+											<span>Live</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
 
-					<a href="https://www.bubble.io/ai" target="_blank" class="work-item">
-						<div class="work-item__image work-item__image--yellow">
-							<img src="media/project-ai.png" alt="Mockup of an AI landing page hero section with an option to join the waitlist" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								AI Landing Pages
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="responsive"></div>
+					<div class="aos-container" data-aos="fade-up" data-aos-duration="1000">
+						<div class="work-item">
+							<div class="work-item__image work-item__image--dark-teal">
+								<img class="work-item__img show-on-tablet" src="media/project-bubble-ds-tablet.png" alt="Examples of the text input and button elements from the Bubble design system" />
+								<img class="work-item__img hide-on-tablet" src="media/project-bubble-ds.png" alt="Examples of the color palette, text input and button elements from the Bubble design system" />
 							</div>
-							<p class="work-item__info__description">
-								Landing pages for Bubble's new AI product, capturing waitlist traffic and A/B testing app generation directly on the page vs an AI specific onboarding path.
-							</p>
-						</div>
-					</a>
-
-					<a href="https://www.bubble.io/marketplace" target="_blank" class="work-item">
-						<div class="work-item__image work-item__image--red">
-							<img src="media/project-marketplace.png" alt="A template directory with a search bar and filtering, and templates displayed as tiles" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								Bubble Marketplace Revamp
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="responsive"></div>
-								<div class="work-tag-outer" data-tag-name="uxr"></div>
+							<div class="work-item__info">
+								<div class="top">
+									<h3 class="work-item__info__heading">
+										Global Design System
+									</h3>
+									<p class="work-item__info__description">
+										Led the creation of Bubble’s design systems, <i>Pop</i> and <i>Burst</i>, re-designing and building all of our core components, writing documentation, and defining governance processes for a team of 10 designers.
+									</p>
+									<p class="work-item__info__description">
+										Frequent reviews and touch points with the team confirmed huge improvements in efficiency and consistency, for both designers and engineers during handoff.
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="work-item__tags">
+										<div class="work-tag">
+											<i class="ph ph-users-three"></i>
+											<span>Lead Designer</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-calendar-blank"></i>
+											<span>Ongoing</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-lock"></i>
+											<span>Private</span>
+										</div>
+									</div>
+								</div>
 							</div>
-							<p class="work-item__info__description">
-								An overhaul of Bubble's marketplace, increasing discoverability of the most useful resources in the ecosystem with searching, filtering and tagging. We measured a number of in-product health metrics, and saw significant increases in visits and downloads, particularly on our templates and plugins pages.
-							</p>
-						</div>
-					</a>
-
-					<div class="work-item">
-						<div class="work-item__image work-item__image--blue">
-							<img src="media/project-onboarding.png" alt="A tablet and mobile screen showing a dashboard page and inbox for Bubble agencies" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								Agency Onboarding
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="responsive"></div>
-								<div class="work-tag-outer" data-tag-name="uxr"></div>
-							</div>
-							<p class="work-item__info__description">
-								A big update to the Bubble agency onboarding experience, focusing on defining clear milestones for new agencies and increasing visibility of the Hire-a-Developer system to generate leads. Feedback from agencies was very positive, and we rolled out a number of improvements post-launch based on speaking with users.
-							</p>
 						</div>
 					</div>
 
-					<a href="https://www.bubble.io/hire-a-developer" target="_blank" class="work-item">
-						<div class="work-item__image work-item__image--dark-teal">
-							<img src="media/project-rfp.png" alt="The matching screen from the Bubble hire a devleoper system" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								Hire-a-Developer System
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="responsive"></div>
-								<div class="work-tag-outer" data-tag-name="uxr"></div>
+					<div class="aos-container" data-aos="fade-up" data-aos-duration="1000">
+						<a href="https://www.bubble.io/hire-a-developer" target="_blank" class="work-item">
+							<div class="work-item__image work-item__image--blue-reverse">
+								<img class="work-item__img show-on-tablet" src="media/project-bubble-rfp-tablet.png" alt="Mockups of the Bubble hire a developer system, showing the screen where developers get matched with your project" />
+								<img class="work-item__img hide-on-tablet" src="media/project-bubble-rfp.png" alt="Mockups of the Bubble hire a developer system, showing the screen where developers get matched with your project" />
 							</div>
-							<p class="work-item__info__description">
-								An overhaul of Bubble's Hire-a-Developer system, to improve both completion rate and match rate of submissions, and make it easier for users to hire Bubble experts. Submissions increased significantly, and over the first 3 months we saw a 19% increase in match rate.
-							</p>
-						</div>
-					</a>
+							<div class="work-item__info">
+								<div class="top">
+									<h3 class="work-item__info__heading">
+										Hire-a-Developer System
+									</h3>
+									<p class="work-item__info__description">
+										An overhaul of Bubble's Hire-a-Developer system, with a goal of increasing the number of submissions, improving the match rate, and making it easier for users to hire Bubble experts. 
+									</p>
+									<p class="work-item__info__description">
+										Submissions increased significantly, and over the first 3 months we saw a <span class="bold-text-500">>500% increase</span> in match rate (from 2.5% to ~15%). 
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="work-item__tags">
+										<div class="work-tag">
+											<i class="ph ph-user"></i>
+											<span>Solo Designer</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-calendar-blank"></i>
+											<span>Feb 2024</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-check"></i>
+											<span>Live</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
 
-					<div class="work-item">
-						<div class="work-item__image work-item__image--red">
-							<img src="media/project-mlb.png" alt="An example screen from the MLB sign up form showing hotel reservations" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								MLB - All Star Game Sign Up Form
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="responsive"></div>
+					<div class="aos-container" data-aos="fade-up" data-aos-duration="1000">
+						<div class="work-item">
+							<div class="work-item__image work-item__image--grey">
+								<img class="work-item__img show-on-tablet" src="media/project-other-clients-tablet.png" alt="Logos from other clients Rhys has worked with, including NFL, MLB, Forumla 1, OTIS and others" />
+								<img class="work-item__img hide-on-tablet" src="media/project-other-clients.png" alt="Logos from other clients Rhys has worked with, including NFL, MLB, Forumla 1, OTIS and others" />
 							</div>
-							<p class="work-item__info__description">
-								A revamped fully responsive sign up form for the MLB All Star game, collecting player information and facilitating the purchase of tickets, merchandise and hotel accommodation.
-							</p>
+							<div class="work-item__info">
+								<div class="top">
+									<h3 class="work-item__info__heading">
+										Other Client Projects
+									</h3>
+									<p class="work-item__info__description">
+										A lot of my work with these clients was either internal or private so I'm unable to share publicly, but these are some of the companies I've worked with and designed digital experiences for.
+									</p>
+								</div>
+								<div class="bottom">
+									<div class="work-item__tags">
+										<div class="work-tag">
+											<i class="ph ph-users-three"></i>
+											<span>Solo Designer</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-calendar-blank"></i>
+											<span>2021-2023</span>
+										</div>
+										<div class="work-tag">
+											<i class="ph ph-lock"></i>
+											<span>Private</span>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 
-					<div class="work-item">
-						<div class="work-item__image work-item__image--teal">
-							<img src="media/project-ticketing-system.png" alt="Desktop mock-up of a support ticketing system application" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								Internal Ticketing System
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="desktop"></div>
-								<div class="work-tag-outer" data-tag-name="uxr"></div>
-							</div>
-							<p class="work-item__info__description">
-								Overhaul of an internal support ticket system, for both a ticket dashboard and ticket details page, providing users with key details of support tickets and an activity log to track recent updates.
-							</p>
-						</div>
-					</div>
-
-					<!-- <a href="https://www.katethomas.me" target="_blank" class="work-item">
-						<div class="work-item__image work-item__image--yellow">
-							<img src="media/project-voiceover-site.png" alt="Screenshot of a voiceover portfolio website" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								Voiceover Personal Website
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="figma"></div>
-								<div class="work-tag-outer" data-tag-name="responsive"></div>
-								<div class="work-tag-outer" data-tag-name="html"></div>
-								<div class="work-tag-outer" data-tag-name="css"></div>
-								<div class="work-tag-outer" data-tag-name="javascript"></div>
-							</div>
-							<p class="work-item__info__description">
-								A personal website with a range of content and UI elements, including downloadable demo reels, responsive navigation and a PHP/AJAX driven contact form.
-							</p>
-						</div>
-					</a> -->
-
-					<div class="work-item">
-						<div class="work-item__image work-item__image--blue">
-							<img src="media/project-vinyl.png" alt="Screenshot of the visual page designer for a no-code application builder" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								Vinyl - No-Code App Building Platform
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="desktop"></div>
-								<div class="work-tag-outer" data-tag-name="uxr"></div>
-							</div>
-							<p class="work-item__info__description">
-								A comprehensive no-code app building platform. I led many visual design and usability improvements, focusing on user experience and making it as simple as possible for users to build apps.
-							</p>
-						</div>
-					</div>
-
-					<div class="work-item">
-						<div class="work-item__image work-item__image--white">
-							<img src="media/project-logos.png" alt="A collection of client logos - NFL, TransMedics, MLB, ABS, Arhaus, NuView, F1, OTIS, StoneMor and vCreative" />
-						</div>
-						<div class="work-item__info">
-							<p class="work-item__info__heading">
-								Other Client Projects
-							</p>
-							<div class="work-item__tags">
-								<div class="work-tag-outer" data-tag-name="uidesign"></div>
-								<div class="work-tag-outer" data-tag-name="responsive"></div>
-								<div class="work-tag-outer" data-tag-name="mobile"></div>
-							</div>
-							<p class="work-item__info__description">
-								A lot of my projects are either internal or private, so I'm unable to share publicly, but these are some of the key customers I've designed applications for.
-							</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</section>
-
-		<section id="skills">
-			<svg class="svg-background svg-background--skills" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FCA311" fill-opacity="0.12" d="M0,128L80,128C160,128,320,128,480,154.7C640,181,800,235,960,224C1120,213,1280,139,1360,101.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-			<svg class="svg-background svg-background--skills-bottom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FCA311" fill-opacity="0.12" d="M0,128L120,117.3C240,107,480,85,720,106.7C960,128,1200,192,1320,224L1440,256L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
-			<div class="section-content skills">
-				<span id="skills_section"></span>
-				<div class="section-heading">
-					<span>03.</span>
-					<h1>Skills</h1>
-				</div>
-				<div class="skill-filters">
-					<label class="filter-item filter-item--active" data-filter-value="all" tabindex="0">All
-					  <input type="radio" checked="true" name="skillFilter" value="all">
-					  <span class="checkbox"></span>
-					</label>
-					<label class="filter-item" data-filter-value="design" tabindex="0">UI/UX Design
-					  <input type="radio" name="skillFilter" value="design">
-					  <span class="checkbox"></span>
-					</label>
-					<label class="filter-item" data-filter-value="development" tabindex="0">Development
-					  <input type="radio" name="skillFilter" value="development">
-					  <span class="checkbox"></span>
-					</label>
-				</div>
-				<div class="skills-container" id="skills_container">
-					<!-- Dynamically load skill items -->
 				</div>
 			</div>
 		</section>
@@ -482,137 +361,152 @@
 		<section id="experience">
 			<div class="section-content experience">
 				<div class="section-heading">
-					<span>04.</span>
-					<h1>Experience</h1>
+					<span>03.</span>
+					<h2>Experience</h2>
 				</div>
-				<div class="experience-links">
-					<div class="link-container">
-						<img src="media/nng-uxc-badge.png" class="" alt="NN/g certification logo" />
-						<a href="media/nng-certificate.pdf" target="_blank" class="view-nng-cert">NN/g UX Certification</a>
-					</div>
-					<div class="experience-links__divider"></div>
-					<div class="link-container link-container--icon">
-						<i class="bi bi-linkedin"></i>
-						<a href="https://www.linkedin.com/in/rhys-thomas-6ba6641a1/" class="visit-linkedin" target="_blank">LinkedIn Profile</a>
-					</div>
-					<div class="experience-links__divider"></div>
-					<div class="link-container link-container--icon">
-						<i class="bi bi-download"></i>
-						<a href="media/rhys-thomas-resume-2024.pdf" target="_blank" class="view-resume">View Resume</a>
-					</div>
-				</div>
-				<div class="experience-container">
-					<div class="experience-item">
-						<div class="experience-item__header">
-							<div class="experience-item__header__info">
-								<a href="https://www.bubble.io" target="_blank">Bubble</a>
-								<span>| July 2023 - Present</span>
+				<div class="experience-outer">
+					<div class="centered-links">
+						<div class="experience-links">
+							<div class="link-container">
+								<img src="media/nng-uxc-badge.png" class="" alt="NN/g certification logo" />
+								<a href="media/nng-certificate.pdf" target="_blank" class="view-nng-cert">NN/g UX Certification</a>
 							</div>
-							<h3>Senior Product Designer</h3>
-						</div>
-						<hr class="experience-item__divider">
-						<ul class="experience-item__list">
-							<li>
-								Craft a seamless experience for users in Bubble's ecosystem that are exploring resources like plugins, templates and agencies to enhance their build.
-							</li>
-							<li>
-								<span class="bold-text">Lead the user research and testing for all ecosystem projects</span>, outlining research plans, defining user criteria and conducting all sessions.
-							</li>
-							<li>
-								One of the leaders in <span class="bold-text">creating the Bubble design system</span>, <span class="bold-text">re-designing and building a large number of our core components</span> and defining documentation and governance processes for a team of 10 designers.
-							</li>
-							<li>
-								<span class="bold-text">Define new features and enhancements</span> to our ecosystem based on user feedback and research, exploring opportunities to improve our user's experience.
-							</li>
-						</ul>
-					</div>
-					<div class="experience-item">
-						<div class="experience-item__header">
-							<div class="experience-item__header__info">
-								<a href="https://www.zudy.com" target="_blank">Zudy</a>
-								<span>| May 2021 - July 2023</span>
+							<div class="link-container link-container--icon">
+								<i class="ph-fill ph-linkedin-logo"></i>
+								<a href="https://www.linkedin.com/in/rhys-thomas-6ba6641a1/" class="visit-linkedin" target="_blank">LinkedIn Profile</a>
 							</div>
-							<h3>Senior Product Designer</h3>
-						</div>
-						<hr class="experience-item__divider">
-						<ul class="experience-item__list">
-							<li>
-								Shape Zudy's product design strategy at a company level.
-							</li>
-							<li>
-								Lead the UI/UX design for client applications.
-							</li>
-							<li>
-								Produce <span class="bold-text">user personas</span>, <span class="bold-text">wireframes</span>, <span class="bold-text">mock-ups</span> and <span class="bold-text">prototypes</span> that help solve business problems.
-							</li>
-							<li>
-								Define the look & feel and improve the usability of our <span class="bold-text">SaaS no-code platform</span>, Vinyl.
-							</li>
-							<li>
-								Created, maintain and update our <span class="bold-text">design system</span> in Figma.
-							</li>
-							<li>
-								Conduct end-to-end <span class="bold-text">UX reviews</span> of existing applications and implement improvements based on <span class="bold-text">UX best practices</span> and <span class="bold-text">web accessibility guidelines</span>.
-							</li>
-						</ul>
-					</div>
-					<div class="experience-item">
-						<div class="experience-item__header">
-							<div class="experience-item__header__info">
-								<a href="https://www.calciumusa.com/" target="_blank">Calcium USA</a>
-								<span>| Jan 2021 - May 2021</span>
+							<div class="link-container link-container--icon">
+								<i class="ph ph-file-text"></i>
+								<a href="media/rhys-thomas-resume-2024.pdf" target="_blank" class="view-resume">View Resume</a>
 							</div>
-							<h3>UX Developer</h3>
 						</div>
-						<hr class="experience-item__divider">
-						<ul class="experience-item__list">
-							<li>
-								Designed and implemented web solutions for a range of clients in the pharmaceutical industry, with a focus on <span class="bold-text">user experience and front end development</span>.
-							</li>
-							<li>
-								Conducted <span class="bold-text">UX reviews</span> of existing websites, focusing on <span class="bold-text">web accessibility</span>, and helped craft the user experience for new features and updates.
-							</li>
-						</ul>
 					</div>
-					<div class="experience-item">
-						<div class="experience-item__header">
-							<div class="experience-item__header__info">
-								<a href="https://www.linxcamps.com/" target="_blank">LINX LLC</a>
-								<span>| Oct 2018 - Jan 2021</span>
+					<div class="experience-container">
+						<div class="experience-item">
+							<div class="experience-item__header">
+								<div class="experience-item__header__info">
+									<a href="https://www.bubble.io" target="_blank">Bubble</a>
+									<span>| July 2023 - Present</span>
+								</div>
+								<h3>Senior Product Designer</h3>
 							</div>
-							<h3>UI/UX Designer & Front End Developer</h3>
+							<ul class="experience-item__list">
+								<li>
+									Deliver a seamless experience for users across Bubble's logged in and logged out websites.
+								</li>
+								<li>
+									Lead user research and testing to ensure data-driven design decisions for all website projects, outlining research plans, defining user criteria, and confucting all sessions.
+								</li>
+								<li>
+									Spearhead the creation of the Bubble design system, designing and building all of our core components and outlining documentation and governance processes for a team of 10 designers.
+								</li>
+							</ul>
 						</div>
-						<hr class="experience-item__divider">
-						<ul class="experience-item__list">
-							<li>
-								Designed and built the front end of our internal software and public-facing websites.
-							</li>
-							<li>
-								Led a <span class="bold-text">full re-design</span> of our public websites, replacing an outdated design and codebase with a template based system to improve consistency. I collaborated with marketing, customer success and engineering to take the process from start to finish.
-							</li>
-							<li>
-								Tech stack included <span class="bold-text">HTML, CSS/SCSS, JavaScript and jQuery</span> for front-end development, and I also collaborated closely with our back-end developers to integrate code, working with PHP and MySQL.
-							</li>
-						</ul>
+						<hr class="experience-divider">
+						<div class="experience-item">
+							<div class="experience-item__header">
+								<div class="experience-item__header__info">
+									<a href="https://www.zudy.com" target="_blank">Zudy</a>
+									<span>| May 2021 - July 2023</span>
+								</div>
+								<h3>Senior Product Designer</h3>
+							</div>
+							<ul class="experience-item__list">
+								<li>
+									Shaped Zudy's product design strategy at a company level, aligning design direction with business goals.
+								</li>
+								<li>
+									Led the UI/UX design for client applications.
+								</li>
+								<li>
+									Produced user personas, wireframes, mock-ups and prototypes that solved business problems.
+								</li>
+								<li>
+									Defined the visual identity and improved the usability of Vinyl, our SaaS no-code platform.
+								</li>
+								<li>
+									Created and maintained a comprehensive design system in Figma, ensuring consistency across all projects.
+								</li>
+								<li>
+									Conducted end-to-end UX reviews of existing applications, identifying key pain points and recommending actionable, user-centric solutions.
+								</li>
+							</ul>
+						</div>
+						<hr class="experience-divider">
+						<div class="experience-item">
+							<div class="experience-item__header">
+								<div class="experience-item__header__info">
+									<a href="https://www.calciumusa.com/" target="_blank">Calcium USA</a>
+									<span>| Jan 2021 - May 2021</span>
+								</div>
+								<h3>UX Developer</h3>
+							</div>
+							<ul class="experience-item__list">
+								<li>
+									Designed and implemented tailored web solutions for pharmaceutical clients, focusing on user experience and front-end development.
+								</li>
+								<li>
+									Conducted end-to-end UX reviews of existing websites, focusing on web accessibility, and crafted the user experience for new features and updates.
+								</li>
+							</ul>
+						</div>
+						<hr class="experience-divider">
+						<div class="experience-item">
+							<div class="experience-item__header">
+								<div class="experience-item__header__info">
+									<a href="https://www.linxcamps.com/" target="_blank">LINX LLC</a>
+									<span>| Oct 2018 - Jan 2021</span>
+								</div>
+								<h3>UI/UX Designer & Front End Developer</h3>
+							</div>
+							<ul class="experience-item__list">
+								<li>
+									Designed and built the front end of our internal software and public-facing websites.
+								</li>
+								<li>
+									Led the complete redesign of our public websites, replacing an outdated design and codebase with a template-based system to enhance consistency. Collaborated with marketing, customer success, and engineering to drive the project from concept to completion.
+								</li>
+								<li>
+									Tech stack included HTML, CSS/SCSS, JavaScript, and jQuery for front-end development, while closely collaborating with back-end developers to integrate PHP and MySQL.
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
+		<div class="bg-lines">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
+
 	</main>
 
 	<footer>
-		<svg class="svg-background svg-background--footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FCA311" fill-opacity="0.12" d="M0,64L48,80C96,96,192,128,288,154.7C384,181,480,203,576,192C672,181,768,139,864,122.7C960,107,1056,117,1152,122.7C1248,128,1344,128,1392,128L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-		<div class="nav-bio">
-			<i class="bi bi-c-circle"></i>
-			<h3 class="nav-bio__name">
-				Rhys Thomas&nbsp;&nbsp;
-				<span>
-					|&nbsp;&nbsp;<span id="copyright-year"></span>
-				</span>
-			</h3>
+		<div class="footer">
+			<i class="ph ph-copyright"></i>
+			<p class="footer__name">
+				Rhys Thomas <span id="copyright-year"></span>
+			</p>
 		</div>
 	</footer>
+
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 </body>
 

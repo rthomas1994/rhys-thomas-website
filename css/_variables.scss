@@ -3,12 +3,13 @@
 /////////////////////////////////////////
 
 // Fonts
-$text-font: "Fira Sans", sans-serif;
-$heading-font: "Catamaran", sans-serif;
+$text-font: "Noto Sans", sans-serif;
+$heading-font: "Heebo", sans-serif;
 
 // Font sizes
-$body-text: 16px;
-$nav-link-text: 18px;
+$body-text: 18px;
+$nav-link-text: 20px;
+$nav-link-text-min: 16px;
 $nav-link-text-mobile: 16px;
 
 // Colors - light 
@@ -17,11 +18,13 @@ $secondary-light: #62BFED; // Light blue
 $complementary-light: #1B9AAA; // Teal
 $complementary-2-light: #FB4D3D; // Orange
 $headings-light: #04080F; // Black
-$text-light: rgba($headings-light, .8); // Light black
+$text-light: #04080F; // Black
 $white: #ffffff; // White
 $black: #000000; // White
-$background-light: #FEFDF9; // Egg shell
-$border-light: #e9e9e9; // Light grey
+$background-light: #FDFDFE; // Light grey
+$border-light: rgba($text-light, .1); // Light grey
+$lightest-grey: #F2F5F9;
+$green-light: #1E6C30;
 
 // Colors - dark 
 $primary-dark: #62BFED; // Light Blue
@@ -30,9 +33,11 @@ $complementary-dark: #00B295; // Teal
 $headings-dark: #fff; // White
 $text-dark: rgba($headings-dark, .8); // Almost white
 $background-dark: $headings-light; // Light black
+$bg-lvl-1-dark: #181C22;
 
 // Navigation
-$nav-height: 88px;
+$nav-height: 104px;
+$nav-height-min: 64px;
 $nav-height-mobile: 88px;
 $nav-background-light: #fff;
 $nav-background-dark: $headings-light;
@@ -40,6 +45,12 @@ $nav-background-dark: $headings-light;
 // Buttons
 $border-radius-buttons: 6px;
 $border-radius-default: 16px;
+
+// Content
+$content-width: 1360px;
+$hz-padding-desktop: 40px;
+$hz-padding-tablet: 32px;
+$hz-padding-mobile: 24px;
 
 ////////////////////////////////////
 ///////////---Mixins---/////////////

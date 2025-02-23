@@ -9,177 +9,12 @@
 ///////////////////////////////////
 
 .about {
-	@include grid;
-	grid-template-columns: 1fr 280px;
-	grid-gap: 56px;
 	align-items: center;
 
-	&__bio {
-
-		h3 {
-			font-size: 1.5em;
-			font-weight: 300;
-			margin-bottom: 8px;
-		}
-
-		h2 {
-			font-family: $heading-font;
-			color: $headings-light;
-			font-size: 4.5em;
-			line-height: 100%;
-			font-weight: 800;
-			margin-bottom: 24px;
-		}
-
-		p {
-			font-size: 1.3em;
-			line-height: 1.5em;
-			color: $headings-light;
-			margin-bottom: 16px;
-		}
-
-		.button {
-			margin-top: 24px;
-		}
-
-	}
-
-	.career-path {
-		background-color: $white;
-		border-radius: 16px;
-		border: 1px solid rgba($headings-light, .4);
-		// padding: 24px 0px 0px 0px;
-		// max-width: 320px;
-
-		&__image {
-			width: 120px;
-			height: 120px;
-			border-radius: 100%;
-			display: block;
-			margin: auto;
-		}
-
-		&__divider {
-			border: 0px;
-			border-top: 1px dashed $border-light;
-			margin: 16px 0px
-		}
-
-		&__button {
-			border-top: 1px solid rgba($headings-light, .15);
-			padding: 24px 16px;
-			text-align: center;
-			border-radius: 0px 0px 16px 16px;
-
-			&__a {
-				text-decoration: none;
-				color: $primary-light;
-				font-weight: 400;
-				font-size: 1.1em;
-
-				i {
-					margin-right: 6px;
-				}
-
-				span {
-					text-decoration: underline;
-				}
-
-			}
-
-		}
-
-	}
-
-	.career-items {
-		position: relative;
-		padding: 24px;
-
-		&:after {
-			content: '';
-		    width: 1px;
-		    border-left: 1px dashed #d1d1d1;
-		    height: calc(100% - 195px);
-		    position: absolute;
-		    left: 36px;
-		    top: 53px;
-		    z-index: 1;
-		}
-
-	}
-
-	.career-item {
-		@include grid;
-		grid-template-columns: 24px 1fr;
-		align-items: center;
-		grid-column-gap: 20px;
-		margin-bottom: 24px;
-		position: relative;
-		z-index: 9;
-
-		&:last-of-type {
-			margin-bottom: 0px;
-		}
-
-		&--active {
-
-			.career-item {
-
-				&__dot {
-					border: 2px solid $complementary-light;	
-				}
-
-				&__info {
-
-					p {
-						font-weight: 600;
-					}
-
-				}
-
-			}
-
-		}
-
-		&--image {
-			margin-left: -7px;
-			grid-column-gap: 11px;
-			grid-template-columns: 40px 1fr;
-		}
-
-		&__dot {
-			height: 24px;
-			width: 24px;
-			border: 1px solid #c1c1c1;
-			border-radius: 100%;
-			background-color: $white;
-		}
-
-		&__image {
-			border-radius: 100%;
-		}
-
-		&__info {
-
-			span {
-				font-weight: 300;
-				color: rgba($text-light, 0.7);
-				font-size: 0.9em;
-			}
-
-			p {
-				font-weight: 400;
-				color: $headings-light;
-				font-size: 1.1em;
-
-				a {
-					color: $headings-light;
-				}
-
-			}
-
-		}
-
+	h1 {
+		font-size: 44px;
+		font-weight: 300;
+		max-width: 940px;
 	}
 
 }
@@ -260,17 +95,29 @@ body.dark {
 ////////////---Media Queries---//////////////
 /////////////////////////////////////////////
 
+@media only screen and (max-width: 992px) {
+
+	.about {
+
+		h1 {
+			font-size: 36px;
+
+			br {
+				display: none;
+			}
+
+		}
+
+	}
+
+}
+
 @media only screen and (max-width: 800px) {
 
 	.about {
-		grid-template-columns: 1fr;
 
-		.career-path {
-			margin: auto;
-		}
-
-		&.section-content {
-			padding-bottom: 80px !important;
+		h1 {
+			font-size: 28px;
 		}
 
 	}
@@ -280,31 +127,7 @@ body.dark {
 @media only screen and (max-width: 650px) {
 	
 	.about {
-
-		&.section-content {
-			padding: 48px 24px 32px 24px !important;
-		}
-		
-		&__bio {
-
-			h3 {
-				font-size: 1em;
-			}
-
-			h2 {
-				font-size: 3em;
-			}
-
-			p {
-				font-size: 1.1em;
-			}
-
-			.button {
-				font-size: 1em;
-			}
-
-		}
-
+			
 	}
 
 }

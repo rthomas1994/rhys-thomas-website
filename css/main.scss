@@ -5,7 +5,6 @@
 @import './nav';
 @import './about';
 @import './work';
-@import './skills';
 @import './experience';
 @import './footer';
 
@@ -26,7 +25,7 @@ html {
 body {
 	font-family: $text-font;
 	background-color: $background-light;
-	font-size: 16px;
+	font-size: $body-text;
 	color: $text-light;
 	font-weight: 300;
 	transition: background-color .4s ease, color .4s ease;
@@ -59,12 +58,25 @@ body {
 .text-link {
 	text-decoration: underline;
 	color: $primary-light;
-	font-weight: 400;
+
+	&--black {
+		color: $text-light;
+
+		&:hover {
+			color: $primary-light;
+		}
+
+	}
+
 }
 
 .h1, .h2, .h3, .h4, .h5 {
 	font-family: $heading-font;
 	transition: color .4s ease;
+}
+
+a {
+	transition: color .2s ease;
 }
 
 a, button, label {
@@ -84,74 +96,23 @@ main {
 }
 
 section {
-	min-height: calc(100vh - #{$nav-height});
-	position: relative;
 	transition: background-color .4s ease;
 }
 
 .section-content {
-	padding: 24px 40px;
+	padding: 0px $hz-padding-desktop;
 	margin: auto;
-	// margin-bottom: 120px;
 	width: 100%;
-	max-width: 1200px;
+	max-width: $content-width;
 
 	&.about {
-		padding: 6% 40px 24px 40px;
+		padding-top: 80px;
+		padding-bottom: 160px;
 	}
 
-	&.work, &.skills, &.experience {
-		max-width: 1440px;
+	&.work {
+		padding-bottom: 200px;
 	}
-
-	&.experience {
-		max-width: 880px;
-	}
-
-	&.skills {
-		padding-top: 260px;
-		padding-bottom: 320px;
-	}
-
-}
-
-.svg-background {
-	position: absolute;
-  display: block;
-  overflow: hidden;
-  z-index: -1;
-  left: 0px;
-  transition: fill .4s ease, background-color .4s ease;
-
-  path {
-  	transition: fill .4s ease, background-color .4s ease;
-  }
-
-  &--about {
-  	bottom: 0px;
-  }
-
-  &--work {
-    top: 0px;
-  }
-
-  &--skills {
-    top: 0px;
-
-    &-bottom {
-    	bottom: 0px;
-    }
-
-  }
-
-  &--experience {
-    top: 0px;
-    position: relative;
-  }
-
-  &--footer {
-  	// top: 0px;
-  }
 
 }
 
@@ -159,61 +120,41 @@ section {
 	@include flex;
 	align-items: center;
 	margin-bottom: 32px;
+	font-family: $heading-font;
 
 	span {
-		font-size: 2.5em;
+		font-size: 24px;
 		font-weight: 300;
 		color: $primary-light;
 	}
 
-	h1 {
-		font-family: $heading-font;
-		font-size: 3.2em;
+	h2 {
+		font-size: 24px;
+		font-weight: 500;
 		color: $headings-light;
-		padding-left: 6px;
+		padding-left: 4px;
 	}
 
 }
 
-.button {
-	text-decoration: none;
-	display: block;
-	width: fit-content;
-	cursor: pointer;
-	border-radius: $border-radius-buttons;
-	color: $white;
-	padding: 6px 20px;
-	font-size: 1.1em;
-	font-weight: 400;
-	background-color: $white;
-	border: 1px solid $primary-light;
-	color: $primary-light;
-	transition: color .4s ease,
-							background-position .4s ease,
-							background-color .4s ease;
+.bg-lines {
+	@include flex;
+	width: 100%;
+	max-width: $content-width;
+	margin: auto;
+	z-index: -1;
+	justify-content: space-between;
+	position: fixed;
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+	padding: 0px $hz-padding-desktop;
 
-	&--primary {
-		padding: 8px 20px;
-		background: $primary-light;
-		background-size: 200% 100%;
-		background-image: linear-gradient(to right, #2C3FA0, #4258CB);
-		border: 0px;
-		color: $white;
-		
-		&:hover {
-			background-position: -100% 0;
-		}
-
-	}
-
-	&:hover {
-		background-color: $primary-light;
-		color: $white;
-	}
-
-	i {
-		font-size: 1.2em;
-		margin-left: 8px;
+	.line {
+		width: 1px;
+		height: 100%;
+		background-color: rgba(4,8,14,.04);
 	}
 
 }
@@ -238,31 +179,22 @@ body.dark {
 		color: $primary-dark;
 	}
 
-	.button--primary {
-		background-color: $primary-dark;
-		background-image: linear-gradient(to right, #62BFED, #A4D9F4);
-		border-color: $primary-dark;
-		color: $headings-light;
-		font-weight: 500;
-	}
-
-	.svg-background {
-
-		path {
-			fill: $white;
-			fill-opacity: .08;
-		}
-
-	}
-
 	.section-heading {
 
 		span {
 			color: $primary-dark;
 		}
 
-		h1 {
+		h2 {
 			color: $headings-dark;
+		}
+
+	}
+
+	.bg-lines {
+
+		.line {
+			background-color: rgba($white, .05);
 		}
 
 	}
@@ -273,13 +205,16 @@ body.dark {
 ////////////---Media Queries---//////////////
 /////////////////////////////////////////////
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 992px) {
 
-	section {
-		min-height: 800px;
+	.bg-lines {
 
-		&#about {
-			min-height: 560px;
+		.line {
+
+			&:nth-child(1), &:nth-child(2), &:nth-child(3), &:nth-child(4)  {
+				display: none;
+			}
+
 		}
 
 	}
@@ -290,31 +225,31 @@ body.dark {
 	html {
 		scroll-padding-top: $nav-height-mobile;
 	}
-	section {
-		&#about {
-			min-height: 560px;
-			.career-path {
-				display: none;
-			}
-		}
-	}
 }
 
 @media only screen and (max-width: 650px) { // Break point for mobile
 
 	.section-content {
-		padding-left: 24px !important;
-		padding-right: 24px !important;
-	}
+		padding-left: $hz-padding-mobile !important;
+		padding-right: $hz-padding-mobile !important;
 
-	.section-heading {
-
-		span {
-			font-size: 2em;
+		&.about {
+			padding-top: 56px;
+			padding-bottom: 140px;
 		}
 
-		h1 {
-			font-size: 2.5em;
+	}
+
+	.bg-lines {
+		padding-left: $hz-padding-mobile !important;
+		padding-right: $hz-padding-mobile !important;
+
+		.line {
+
+			&:nth-child(5), &:nth-child(6), &:nth-child(7)  {
+				display: none;
+			}
+
 		}
 
 	}
