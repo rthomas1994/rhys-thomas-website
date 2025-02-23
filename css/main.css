@@ -420,7 +420,7 @@ body.dark .work-container .work-item {
   .work-container .work-item {
     grid-template-columns: 500px 1fr; }
     .work-container .work-item__info__heading {
-      margin-bottom: 20px; } }
+      margin-bottom: 16px; } }
 @media only screen and (max-width: 1080px) {
   .work-container .work-item {
     grid-template-columns: 1fr;
