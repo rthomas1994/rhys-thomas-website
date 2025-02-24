@@ -225,13 +225,24 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 8px;
+    gap: 3px;
     justify-content: center;
     align-items: center;
     font-weight: 300; }
     footer .footer i {
       font-weight: 200;
       font-size: 20px; }
+    footer .footer-left {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      gap: 3px;
+      justify-content: center;
+      align-items: center;
+      font-weight: 300; }
+      footer .footer-left i {
+        font-weight: 200;
+        font-size: 20px; }
 
 body.dark nav.desktop-nav {
   background-color: #04080F;
@@ -277,7 +288,13 @@ body.dark .nav-bio__image--light {
     padding-left: 24px !important;
     padding-right: 24px !important; }
   nav.desktop-nav .theme-button {
-    display: none; } }
+    display: none; }
+
+  footer .footer {
+    display: block;
+    text-align: center; }
+    footer .footer-left {
+      margin-bottom: 16px; } }
 .about {
   align-items: center; }
   .about h1 {

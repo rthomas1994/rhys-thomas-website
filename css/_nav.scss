@@ -310,7 +310,7 @@ footer {
 
 	.footer {
 		@include flex;
-		gap: 8px;
+		gap: 3px;
 		justify-content: center;
 		align-items: center;
 		font-weight: 300;
@@ -318,6 +318,19 @@ footer {
 		i {
 			font-weight: 200;
 			font-size: 20px;
+		}
+
+		&-left {
+			@include flex;
+			gap: 3px;
+			justify-content: center;
+			align-items: center;
+			font-weight: 300;
+
+			i {
+				font-weight: 200;
+				font-size: 20px;
+			}
 		}
 
 	}
@@ -424,6 +437,20 @@ body.dark {
 
 		.theme-button {
 			display: none;
+		}
+
+	}
+
+	footer {
+
+		.footer {
+			display: block;
+			text-align: center;
+
+			&-left {
+				margin-bottom: 16px;
+			}
+
 		}
 
 	}
