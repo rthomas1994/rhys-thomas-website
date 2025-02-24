@@ -138,8 +138,6 @@ nav.desktop-nav {
   .theme-button:hover {
     background-color: rgba(66, 88, 203, 0.15);
     background-position-y: -4px; }
-    .theme-button:hover i {
-      font-size: 28px; }
   .theme-button:focus-visible {
     border-radius: 100%; }
   .theme-button i {
