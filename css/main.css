@@ -420,8 +420,7 @@ body.dark {
 body.dark .work-container .work-item {
   background-color: #181C22; }
   body.dark .work-container .work-item__image--grey img {
-    background: linear-gradient(239deg, #FFF 0%, rgba(255, 255, 255, 0.75) 100%);
-    border-radius: 6px; }
+    background: linear-gradient(239deg, #FFF 0%, rgba(255, 255, 255, 0.75) 100%); }
   body.dark .work-container .work-item__info__heading {
     color: #fff;
     font-weight: 500; }
