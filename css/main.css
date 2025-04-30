@@ -528,7 +528,7 @@ section#experience {
   width: 100%;
   max-width: 880px;
   margin: auto;
-  padding: 48px 40px; }
+  padding: 32px 40px; }
   .experience-container .experience-item__header__info {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -542,9 +542,9 @@ section#experience {
       font-weight: 400; }
   .experience-container .experience-item__header h3 {
     font-family: "Heebo", sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 16px;
     line-height: 1.3em; }
   .experience-container .experience-item__list {
     line-height: 1.6em;

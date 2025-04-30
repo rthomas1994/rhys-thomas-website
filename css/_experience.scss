@@ -91,7 +91,7 @@ section#experience {
 		width: 100%;
 		max-width: 880px;
 		margin: auto;
-		padding: 48px $hz-padding-desktop;
+		padding: 32px $hz-padding-desktop;
 
 		&__header {
 
@@ -111,9 +111,9 @@ section#experience {
 
 			h3 {
 				font-family: $heading-font;
-				font-size: 26px;
-				font-weight: 700;
-				margin-bottom: 20px;
+				font-size: 22px;
+				font-weight: 600;
+				margin-bottom: 16px;
 				line-height: 1.3em;
 			}
 
