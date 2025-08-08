@@ -376,9 +376,8 @@ body.dark {
       font-weight: 300;
       font-size: 16px;
       line-height: 1.5em;
-      text-decoration: none; }
-      .work-container .work-item__info__description:first-of-type {
-        margin-bottom: 12px; }
+      text-decoration: none;
+      margin-bottom: 16px; }
     .work-container .work-item__info ul {
       margin-top: 12px;
       padding-left: 24px; }
