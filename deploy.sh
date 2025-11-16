@@ -24,8 +24,8 @@ echo "Using asset version: $VERSION"
 
 # Generate index.html from the template, replacing %ASSET_VERSION%
 if [[ ! -f "index.template.html" ]]; then
-  echo "Error: index.template.html not found in $(pwd)" >&2
-  exit 1
+ echo "Error: index.template.html not found in $(pwd)" >&2
+ exit 1
 fi
 
 sed "s/%ASSET_VERSION%/${VERSION}/g" index.template.html > index.html
